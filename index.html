@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Compets</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="script.js"></script>
-</head>
-<body>
-  <div id="main">
-    <h2>Divers</h2>
-    <ol>
-      <li><a href="licence.pdf">Licence</a></li>
-      <li><a href="minima/BE-2016-50m.pdf">Temps limites championnat de Belgique 50m</a></li>
-      <li><a href="minima/BE-2016-25m.pdf">Temps limites championnat de Belgique 25m</a></li>
-      <li><a href="minima/BCBW-2016.pdf">Temps limites championnat du district BCBW</a></li>
-    </ol>
-    <h2>Calendrier des competitions</h2>
-    <table>
-      <thead>
+  <head>
+    <meta charset="UTF-8">
+    <title>NSG Compet</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="compets.js"></script>
+    <script type="text/javascript" src="workouts.js"></script>
+    <script type="text/javascript" src="event.js"></script>
+    <script type="text/javascript" src="calendar.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <h2>Documents</h2>
+      <ol>
+        <li><a href="licence.pdf">Licence</a></li>
+        <li><a href="minima/BE-2016-50m.pdf">Temps limites championnat de Belgique 50m</a></li>
+        <li><a href="minima/BE-2016-25m.pdf">Temps limites championnat de Belgique 25m</a></li>
+        <li><a href="minima/BCBW-2016.pdf">Temps limites championnat du district BCBW</a></li>
+      </ol>
+      <h2>Calendrier</h2>
+      <table id="calendar">
         <tr>
-          <th>Date</th>
-          <th>Name</th>
-          <th>Schedule</th>
-          <th>Startlist</th>
-          <th>Result</th>
+          <td colspan="7" align="center">
+            <a id="calendar-previous" href="#">&lt;&lt;</a>
+            <span id="calendar-title"></span>
+            <a id="calendar-next" href="#">&gt;&gt;</a>
+          </td>
+        </tr>      
+        <tr>
+          <th>Lun</th>
+          <th>Mar</th>
+          <th>Mer</th>
+          <th>Jeu</th>
+          <th>Ven</th>
+          <th>Sam</th>
+          <th>Dim</th>
         </tr>
-      </thead>
-      <tbody id="compets">
-      </tbody>
-    </table>
-  </div>
-</body>
+      </table>
+    </div>
+  </body>
 </html>

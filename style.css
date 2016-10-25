@@ -11,3 +11,21 @@ td, th {
   border: 1px solid black;
   padding: 5px;
 }
+
+#calendar td {
+  vertical-align: top;
+  min-width: 40px;
+  height: 40px;
+}
+
+.compet {
+  color: red;
+}
+
+.workout {
+  color: green;
+}
+
+#calendar-previous, #calendar-next {
+  cursor: pointer;
+}
