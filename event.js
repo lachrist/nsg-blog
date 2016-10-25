@@ -40,7 +40,6 @@ var Event = (function () {
   }
 
   return function (date) {
-    console.log(date);
     var div = document.createElement("div");
     compet(date, div);
     workout(date, div);

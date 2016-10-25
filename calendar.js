@@ -57,12 +57,13 @@ window.addEventListener("load", function () {
   function empty (td) {
     while (td.firstChild)
       td.removeChild(td.firstChild);
-  } 
+  }
+
+  function pad (i) { return i < 10 ? "0"+i : i }
 
   function update () {
     document.getElementById("calendar-title").textContent = months[month] + " " + year;
     var offset = ((new Date(year, month, 1).getDay()) + 2) % 6;
-    console.log(year +" "+ month+" "+offset);
     var max = new Date(year, month, 0).getDate();
     tds.forEach(empty);
     for (var i=1; i<=max; i++) {
@@ -70,7 +71,7 @@ window.addEventListener("load", function () {
         div.class = "date";
         div.textContent = i;
       tds[i+offset].appendChild(div);
-      tds[i+offset].appendChild(Event(year+"-"+month+"-"+(i<10?"0":"")+i));
+      tds[i+offset].appendChild(Event(year+"-"+pad(month)+"-"+pad(i)));
     }
     var today = new Date();
     if (year === today.getFullYear() && month === today.getMonth()+1)
