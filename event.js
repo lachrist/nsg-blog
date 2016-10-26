@@ -17,18 +17,6 @@ var Event = (function () {
     return div;
   }
 
-  function compet (date, div1) {
-    if (date in Compets) {
-      var div2 = document.createElement("div");
-      div2.className = "compet";
-      div2.textContent = Compets[date];
-      div2.appendChild(link("Schedule", "schedule/"+date+".pdf"));
-      div2.appendChild(link("Startlist", "startlist/"+date+".pdf"));
-      div2.appendChild(link("Result", "result/"+date+".pdf"));
-      div1.appendChild(div2);
-    }
-  }
-
   function workout (date, div) {
     if (date in Workouts) {
       var a = document.createElement("a");
@@ -39,10 +27,23 @@ var Event = (function () {
     }
   }
 
+  function compet (date, div1) {
+    if (date in Compets) {
+      var div2 = document.createElement("div");
+      div2.className = "compet";
+      div2.textContent = Compets[date];
+      div2.appendChild(link("Horaire", "compet/"+Compets[date]+"/schedule.pdf"));
+      div2.appendChild(link("Inscriptions", "compet/"+Compets[date]+"/inscription.pdf"));
+      div2.appendChild(link("Départs", "compet/"+Compets[date]+"/startlist.pdf"));
+      div2.appendChild(link("Resultats", "compet/"+Compets[date]+"/result.pdf"));
+      div1.appendChild(div2);
+    }
+  }
+
   return function (date) {
     var div = document.createElement("div");
-    compet(date, div);
     workout(date, div);
+    compet(date, div);
     return div;
   };
 
