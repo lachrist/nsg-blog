@@ -1,5 +1,5 @@
 
-var Calendar = function () {
+window.Calendar = function () {
 
   var months = [
     null,

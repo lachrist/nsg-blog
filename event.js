@@ -1,5 +1,5 @@
 
-var Event = (function () {
+window.Event = (function () {
 
   function link (innerText, href) {
     var div = document.createElement("div");
