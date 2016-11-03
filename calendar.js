@@ -1,5 +1,5 @@
 
-Calendar = function () {
+var Calendar = function () {
 
   var months = [
     null,
