@@ -1,5 +1,5 @@
 
-window.addEventListener("load", function () {
+Calendar = function () {
 
   var months = [
     null,
@@ -80,4 +80,4 @@ window.addEventListener("load", function () {
 
   update();
 
-});
+};
