@@ -18,7 +18,7 @@ window.Compet = (function (compets) {
       compets[date].docs.forEach(function (doc) {
         var a = document.createElement("a");
         a.textContent = translate(doc.split(".")[0])+"["+doc.split(".")[1]+"]";
-        a.href = "compets/"+date+" "+compets[date].name+"/"+doc;
+        a.href = "compet/"+date+" "+compets[date].name+"/"+doc;
         div2.appendChild(a);
       });
       div1.appendChild(div2);
