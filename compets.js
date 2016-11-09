@@ -6,5 +6,7 @@ window.Compets = {
   "2016-11-19": "Richard Anis I",
   "2016-11-20": "Richard Anis II",
   "2016-11-25": "BCBW Relais I",
-  "2016-12-02": "BCBW Relais II"
+  "2016-12-02": "BCBW Relais II",
+  "2016-12-27": "Leuven Laatste Kans",
+  "2016-12-08": "Frank Pepermans"
 };
