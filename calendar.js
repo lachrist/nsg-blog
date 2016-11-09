@@ -1,5 +1,5 @@
 
-window.Calendar = function () {
+window.addEventListener("load", function () {
 
   var months = [
     null,
@@ -21,8 +21,8 @@ window.Calendar = function () {
   var year = new Date().getFullYear();
 
   document.getElementById("calendar-next").onclick = function () {
-    if (month === 1) {
-      month = 12;
+    if (month === 12) {
+      month = 1;
       year++;
     } else {
       month++;
@@ -59,6 +59,18 @@ window.Calendar = function () {
       td.removeChild(td.firstChild);
   }
 
+  function cell (day) {
+    var div1 = document.createElement("div");
+    var div2 = document.createElement("div");
+    div2.className = "date";
+    div2.textContent = day;
+    div1.appendChild(div2);
+    var date = year+"-"+pad(month)+"-"+pad(day);
+    Compet(date, div1);
+    Workout(date, div1);
+    return div1;
+  }
+
   function pad (i) { return i < 10 ? "0"+i : i }
 
   function update () {
@@ -66,18 +78,15 @@ window.Calendar = function () {
     var offset = ((new Date(year, month, 1).getDay()) + 2) % 6;
     var max = new Date(year, month, 0).getDate();
     tds.forEach(empty);
-    for (var i=1; i<=max; i++) {
-      var div = document.createElement("div");
-        div.class = "date";
-        div.textContent = i;
-      tds[i+offset].appendChild(div);
-      tds[i+offset].appendChild(Event(year+"-"+pad(month)+"-"+pad(i)));
-    }
+    for (var i=1; i<=max; i++)
+      tds[i+offset].appendChild(cell(i));
     var today = new Date();
-    if (year === today.getFullYear() && month === today.getMonth()+1)
-      tds[today.getDate()+offset].class += " today";
+    if (year === today.getFullYear() && month === today.getMonth()+1) {
+      console.log(today.getDate()+offset);
+      tds[today.getDate()+offset].firstChild.className += " today";
+    }
   }
 
   update();
 
-};
+});

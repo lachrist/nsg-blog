@@ -5,26 +5,7 @@
     <title>NSG Compet</title>
     <link rel="icon" href="favicon.ico">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="event.js"></script>
-    <script type="text/javascript" src="calendar.js"></script>
-    <script type="text/javascript">
-      (function () {
-        function load (href, callback) {
-          var req = new XMLHttpRequest();
-          req.addEventListener("load", function () {
-            eval(req.responseText);
-            callback();
-          });
-          req.open("GET", href+"?random="+Math.ceil(100000000 * Math.random()));
-          req.send();
-        }
-        load("compets.js", function () {
-          load("workouts.js", function () {
-            Calendar();
-          })
-        })
-      } ());
-    </script>
+    <script type="text/javascript" src="bundle.js"></script>
   </head>
   <body>
     <div id="main">

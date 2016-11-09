@@ -18,7 +18,16 @@ td, th {
   height: 40px;
 }
 
+.compet a {
+  display: block;
+}
+
 .compet {
+  color: red;
+}
+
+.today {
+  font-weight: 900;
   color: red;
 }
 
