@@ -1,0 +1,14 @@
+4 * (30s high-knee +
+     30s butt-kicker +
+     30s burpee-1 +
+     30s burpee-2 +
+     30s pushup-serratus +
+     30s flutter-kick +
+     30s rest)  +
+120s rest +
+4 *  (45s elastic-butterfly + 15s rest +
+      45s superman-plank + 15s rest +
+      45s elastic-row + 15s rest +
+      45s superman + 15s rest +
+      45s flutter-kick + 15s rest +
+      45s dip + 15s rest)

@@ -1,0 +1,5 @@
+4 * (2 * (45s elbow-plank-front + 15s rest +
+          45s elbow-plank-back + 15s rest) +
+     4 * (45s elastic-butterfly + 15s rest) +
+     2 * (45s elbow-plank-left + 15s rest +
+          45s elbow-plank-right + 15s rest))

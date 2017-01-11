@@ -1,0 +1,27 @@
+3 * (30s arm-circle-large-forward +
+     5s rest +
+     30s arm-circle-large-backward +
+     5s rest) +
+3 * (30s arm-circle-small-forward +
+     5s rest +
+     30s arm-circle-small-backward +
+     5s rest) +
+60s rest +
+2 * (3 * (30s elbow-plank-front +
+          5s rest +
+          30s elbow-plank-back +
+          5s rest) +
+     60s rest +
+     3 * (30s elbow-plank-left +
+          5s rest +
+          30s elbow-plank-right +
+          5s rest) +
+     60s rest +
+     3 * (30s superman-alternate +
+          5s rest +
+          30s superman +
+          5s rest +
+          30s superman-alternate +
+          5s rest +
+          30s superman-plank) +
+     60s rest)

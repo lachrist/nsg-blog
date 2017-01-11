@@ -1,28 +1,36 @@
 
-window.Compet = (function (compets) {
+var Compets = require("./compets.js");
 
-  var translations = {
-    "schedule": "Horaire",
-    "inscription": "Inscriptions",
-    "startlist": "Départs",
-    "result": "Résultats"
-  };
+function translate (word) { return translations[word] || word }
+var translations = {
+  "schedule.pdf": "Horaire.pdf",
+  "inscription.pdf": "Inscriptions.pdf",
+  "startlist.pdf": "Départs.pdf",
+  "result.pdf": "Résultats.pdf"
+};
 
-  function translate (word) { return translations[word] || word }
+function sort (x, y) {
+  if (ordering.indexOf(x) === -1 && ordering.indexOf(y) === -1)
+    return x.localeCompare(y);
+  if (ordering.indexOf(x) === -1)
+    return 1;
+  if (ordering.indexOf(y) === -1)
+    return -1;
+  return ordering.indexOf(x) > ordering.indexOf(y) ? 1 : -1;
+}
+var ordering = ["schedule.pdf", "inscription.pdf", "startlist.pdf", "result.pdf"];
 
-  return function (date, div1) {
-    if (date in compets) {
-      var div2 = document.createElement("div");
-      div2.className = "compet";
-      div2.textContent = compets[date].name;
-      compets[date].docs.forEach(function (doc) {
-        var a = document.createElement("a");
-        a.textContent = translate(doc.split(".")[0])+"["+doc.split(".")[1]+"]";
-        a.href = "compet/"+date+" "+compets[date].name+"/"+doc;
-        div2.appendChild(a);
-      });
-      div1.appendChild(div2);
-    }
+module.exports = function (date, div1) {
+  if (date in Compets) {
+    var div2 = document.createElement("div");
+    div2.className = "compet";
+    div2.textContent = Compets[date].name;
+    Compets[date].docs.sort(sort).forEach(function (doc) {
+      var a = document.createElement("a");
+      a.textContent = translate(doc);
+      a.href = "compet/"+date+" "+Compets[date].name+"/"+doc;
+      div2.appendChild(a);
+    });
+    div1.appendChild(div2);
   }
-
-} (@COMPETS));
+};

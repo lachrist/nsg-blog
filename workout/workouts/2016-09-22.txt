@@ -1,0 +1,36 @@
+  3 * (30s butt-kicker + 30s high-knee)
++ 60s rest
++ 3 * (45s mountain-climbing + 15s rest)
++ 60s rest
++ 3 * (  20s burpee-1 + 10s rest
+       + 20s burpee-2 + 10s rest)
++ 60s rest
++ 3 * (  20s lunge + 10s rest
+       + 20s squat + 10s rest)
++ 60s rest
++ 3 * (  12s pushup-plank-high
+       + 12s pushup-plank-left
+       + 12s pushup-plank-right
+       + 12s pushup-plank-back
+       + 12s rest)
++ 60s rest
++ 3 * (  12s elbow-plank-front
+       + 12s elbow-plank-left
+       + 12s elbow-plank-right
+       + 12s elbow-plank-back
+       + 12s rest)
++ 60s rest
++ 3 * (  12s pushup-plank-arm-left
+       + 12s pushup-plank-arm-right
+       + 12s pushup-plank-leg-left
+       + 12s pushup-plank-leg-right
+       + 12s rest)
++ 60s rest
++ 3 * (40s superman-plank + 20s rest)
++ 60s rest
++ 3 * (  20s walkup-left + 10s rest
+       + 20s walkup-right + 10s rest)
++ 60s rest
++ 3 * (  20s superman + 10s rest
+       + 20s superman-alternate + 10s rest)
++ 60s rest

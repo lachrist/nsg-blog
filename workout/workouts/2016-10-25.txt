@@ -1,0 +1,29 @@
+4 * (15s butt-kicker + 15s high-knee) +
+30s rest +
+4 * (22s mountain-climbing + 8s rest) +
+30s rest +
+4 * (22s burpee-1 + 8s rest) +
+30s rest +
+4 * (22s burpee-2 + 8s rest) +
+30s rest +
+4 * (22s burpee + 8s rest) +
+30s rest +
+4 * (22s burpee-pushup + 8s rest) +
+30s rest +
+2 * (22s walkup-right + 8s rest +
+     22s walkup-left + 8s rest) +
+30s rest +
+2 * (55s superman-alternate + 5s rest) +
+30s rest +
+4 * (22s flutter-kick + 8s rest) +
+30s rest +
+4 * (22s superman + 8s rest) +
+30s rest +
+2 * (50s lunge + 10s rest) +
+30s rest +
+4 * (22s squat + 8s rest) +
+30s rest +
+4 * (22s dip + 8s rest) +
+30s rest +
+4 * (22s pushup-serratus + 8s rest)
+

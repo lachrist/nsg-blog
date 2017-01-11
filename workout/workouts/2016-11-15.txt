@@ -1,0 +1,21 @@
+  30s arm-circle-large-forward
++ 30s arm-circle-large-backward
++ 30s arm-circle-small-forward
++ 30s arm-circle-small-backward
++ 6 * (22s burpee + 8s rest)
++ 60s rest
++ 4 * (  60s elastic-butterfly
+       + 10s rest
+       + 30s elastic-rotator-internal-left
+       + 10s rest
+       + 60s elastic-butterfly
+       + 10s rest
+       + 30s elastic-rotator-internal-right
+       + 10s rest
+       + 60s elastic-butterfly
+       + 10s rest
+       + 30s elastic-rotator-external-left
+       + 10s rest
+       + 60s elastic-butterfly
+       + 10s rest
+       + 30s elastic-rotator-external-right)

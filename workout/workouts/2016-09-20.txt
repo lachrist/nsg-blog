@@ -1,0 +1,18 @@
+  3 * (30s butt-kicker + 30s high-knee)
++ 3 * (45s mountain-climbing + 15s rest)
++ 9 * (4 burpee-pushup in 20s)
++ 15s  elastic-butterfly + 15s rest
++ 30s  elastic-butterfly + 15s rest
++ 45s  elastic-butterfly + 15s rest
++ 60s  elastic-butterfly + 15s rest
++ 75s  elastic-butterfly + 15s rest
++ 90s  elastic-butterfly + 15s rest
++ 105s elastic-butterfly + 15s rest
++ 120s elastic-butterfly + 15s rest
++ 105s elastic-butterfly + 15s rest
++ 90s  elastic-butterfly + 15s rest
++ 75s  elastic-butterfly + 15s rest
++ 60s  elastic-butterfly + 15s rest
++ 45s  elastic-butterfly + 15s rest
++ 30s  elastic-butterfly + 15s rest
++ 15s  elastic-butterfly + 15s rest

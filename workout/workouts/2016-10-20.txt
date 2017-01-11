@@ -1,0 +1,30 @@
+60s arm-circle-small-backward +
+30s arm-circle-large-backward +
+60s arm-circle-small-forward +
+30s arm-circle-large-forward +
+60s rest +
+3 * (30s butt-kicker + 30s high-knee) +
+60s rest +
+120s elastic-butterfly +
+60s elastic-rotator-external-left +
+30s rest +
+120s elastic-butterfly +
+60s elastic-rotator-external-right +
+30s rest +
+120s elastic-butterfly +
+60s elastic-rotator-internal-left +
+120s elastic-butterfly +
+60s elastic-rotator-internal-right +
+30s rest +
+120s elastic-butterfly +
+60s elastic-row +
+30s rest +
+120s elastic-butterfly +
+60s elastic-row +
+30s rest +
+120s elastic-butterfly +
+60s elastic-uprow +
+30s rest +
+120s elastic-butterfly +
+60s elastic-uprow +
+30s rest

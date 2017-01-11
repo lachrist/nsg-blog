@@ -1,0 +1,7 @@
+$1 * ($2 high-knee +
+      $2 butt-kicker +
+      $2 burpee-1 +
+      $2 burpee-2 +
+      $2 pushup-serratus +
+      $2 flutter-kick +
+      $2 rest)

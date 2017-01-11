@@ -1,0 +1,17 @@
+4 * (30s high-knee +
+     30s elbow-plank-front +
+     30s squat +
+     30s elbow-plank-back +
+     30s burpee) +
+4 * (60s rest +
+     30s pushup-serratus +
+     30s elastic-row +
+     60s elastic-butterfly +
+     30s elastic-rotator-internal-right +
+     30s elastic-rotator-internal-left +
+     60s rest +
+     30s pushup-serratus +
+     30s elastic-row +
+     60s elastic-butterfly +
+     30s elastic-rotator-external-right +
+     30s elastic-rotator-external-left)

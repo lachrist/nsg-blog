@@ -1,0 +1,23 @@
+4 * (15s butt-kicker + 15s high-knee) +
+30s rest +
+4 * (22s mountain-climbing + 8s rest) +
+30s rest +
+4 * (22s burpee + 8s rest) +
+30s rest +
+2 * (55s superman-alternate + 5s rest) +
+30s rest +
+4 * (22s superman + 8s rest) +
+30s rest +
+2 * (2 * (60s elastic-butterfly +
+          60s elastic-row) +
+     30s rest +
+     60s elastic-rotator-internal-left +
+     60s elastic-rotator-internal-right +
+     60s elastic-rotator-external-left +
+     60s elastic-rotator-external-right +
+     30s rest +
+     2 * (60s elastic-butterfly +
+          60s elastic-row) +
+     30s rest +
+     4 * (50s elastic-uprow + 10s rest) +
+     30s rest)

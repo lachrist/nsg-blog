@@ -1,0 +1,33 @@
+  3 * (30s high-knee + 30s butt-kicker)
++ 60s rest
++ 3 * (45s mountain-climbing + 15s rest)
++ 60s rest
++ 3 * (  25s lunge + 5s rest
+       + 25s squat + 5s rest)
++ 60s rest
++ 6 * (20s burpee-pushup + 10s rest)
++ 60s rest
++ 6 * (  25s flutter-kick + 5s rest
+       + 25s superman-plank + 5s rest)
++ 60s rest
++
+  (  45s arm-circle-large-1
+   + 45s arm-circle-large-2
+   + 45s arm-circle-small-1
+   + 45s arm-circle-small-2)
++ 60s rest
++ 3 * (  25s dip + 5s rest
+       + 25s pushup-plank-low + 5s rest)
++ 60s rest
++ 3 * (  25s dip + 5s rest
+       + 25s pushup-serratus + 5s rest)
++ 60s rest
++ 180s elastic-butterfly
++ 60s rest
++ 180s elastic-butterfly
++ 60s rest
++ 180s elastic-butterfly
++ 60s rest
++ 180s elastic-butterfly
++ 60s rest
++ 180s elastic-butterfly

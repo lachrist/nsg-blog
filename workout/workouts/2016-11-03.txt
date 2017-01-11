@@ -1,0 +1,23 @@
+30s arm-circle-large-forward +
+30s arm-circle-large-backward +
+30s arm-circle-small-forward +
+30s arm-circle-small-backward +
+30s shoulder-circle-forward +
+30s shoulder-circle-backward +
+2 * (30s butt-kicker + 30s high-knee) +
+2 * (25s burpee-1 + 5s rest +
+     25s burpee-2 + 5s rest) +
+4 * (60s elastic-butterfly              + 5s rest +
+     30s elastic-rotator-internal-left  + 5s rest +
+     30s elastic-rotator-external-left  + 5s rest +
+     60s elastic-butterfly              + 5s rest +
+     30s elbow-plank-left               + 5s rest +
+     30s pushup-plank-left              + 5s rest +
+     60s rest +
+     60s elastic-butterfly              + 5s rest +
+     30s elastic-rotator-internal-right + 5s rest +
+     30s elastic-rotator-external-right + 5s rest +
+     60s elastic-butterfly              + 5s rest +
+     30s elbow-plank-right              + 5s rest +
+     30s pushup-plank-right             + 5s rest +
+     60s rest)
