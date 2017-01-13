@@ -2,7 +2,7 @@
 var Compet = require("./compet.js");
 var Workout = require("./workout");
 var Documents = require("./documents.js");
-
+var Holliday = require("./holliday.js");
 
 window.addEventListener("load", function () {
 
@@ -69,17 +69,19 @@ window.addEventListener("load", function () {
   } ());
 
   function empty (td) {
+    td.className = "";
     while (td.firstChild)
       td.removeChild(td.firstChild);
   }
 
   function cell (day) {
+    var date = year+"-"+pad(month)+"-"+pad(day);
     var div1 = document.createElement("div");
     var div2 = document.createElement("div");
     div2.className = "date";
     div2.textContent = day;
+    Holliday(date) && (div2.className = "holliday")
     div1.appendChild(div2);
-    var date = year+"-"+pad(month)+"-"+pad(day);
     Compet(date, div1);
     Workout(date, div1);
     return div1;
@@ -89,16 +91,15 @@ window.addEventListener("load", function () {
 
   function update () {
     document.getElementById("calendar-title").textContent = months[month] + " " + year;
-    var offset = ((new Date(year, month, 1).getDay()) + 2) % 6;
-    var max = new Date(year, month, 0).getDate();
+    var offset = ((new Date(year, month-1, 1).getDay()) -1);
+    (offset === -1) && (offset = 6)
+    var max = new Date(year, month-1, 0).getDate();
     tds.forEach(empty);
-    for (var i=1; i<=max; i++)
-      tds[i+offset].appendChild(cell(i));
+    for (var i=0; i<max; i++)
+      tds[i+offset].appendChild(cell(i+1));
     var today = new Date();
-    if (year === today.getFullYear() && month === today.getMonth()+1) {
-      console.log(today.getDate()+offset);
-      tds[today.getDate()+offset].firstChild.className += " today";
-    }
+    if (year === today.getFullYear() && month-1 === today.getMonth())
+      tds[today.getDate()+offset-1].className = "today";
   }
 
   update();

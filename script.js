@@ -230,17 +230,48 @@ module.exports = {
 module.exports = [
   "document/licence.pdf",
   "document/minima/2016-BCBW.pdf",
-  "document/minima/2016-BE-25m.pdf",
   "document/minima/2016-BE-50m.pdf",
+  "document/minima/2016-BE-25m.pdf",
   "document/minima/2017-FR-JEUNES-50m.pdf",
   "document/minima/2017-FR-OPEN-50m.pdf"
 ];
 },{}],4:[function(require,module,exports){
 
+var days = [
+  "2017-09-27",
+  "2016-11-11",
+  "2017-04-17",
+  "2017-05-01",
+  "2017-05-25",
+  "2017-06-05"
+];
+
+var spans = [
+  ["2016-10-31", "2016-11-04"],
+  ["2016-12-26", "2017-01-06"],
+  ["2017-02-27", "2017-03-03"],
+  ["2017-04-03", "2017-04-14"],
+  ["2017-07-01", "2017-08-31"]
+];
+
+module.exports = function (date) {
+  var day = (new Date(date)).getDay();
+  if (day === 0 || day === 6)
+    return true;
+  if (days.indexOf(date) !== -1)
+    return true;
+  for (var i=0; i<spans.length; i++)
+    if (date >= spans[i][0] && date <= spans[i][1])
+      return true;
+  return false;
+};
+
+},{}],5:[function(require,module,exports){
+
 var Compet = require("./compet.js");
 var Workout = require("./workout");
 var Documents = require("./documents.js");
-
+var Holliday = require("./holliday.js");
 
 window.addEventListener("load", function () {
 
@@ -307,17 +338,19 @@ window.addEventListener("load", function () {
   } ());
 
   function empty (td) {
+    td.className = "";
     while (td.firstChild)
       td.removeChild(td.firstChild);
   }
 
   function cell (day) {
+    var date = year+"-"+pad(month)+"-"+pad(day);
     var div1 = document.createElement("div");
     var div2 = document.createElement("div");
     div2.className = "date";
     div2.textContent = day;
+    Holliday(date) && (div2.className = "holliday")
     div1.appendChild(div2);
-    var date = year+"-"+pad(month)+"-"+pad(day);
     Compet(date, div1);
     Workout(date, div1);
     return div1;
@@ -327,23 +360,22 @@ window.addEventListener("load", function () {
 
   function update () {
     document.getElementById("calendar-title").textContent = months[month] + " " + year;
-    var offset = ((new Date(year, month, 1).getDay()) + 2) % 6;
-    var max = new Date(year, month, 0).getDate();
+    var offset = ((new Date(year, month-1, 1).getDay()) -1);
+    (offset === -1) && (offset = 6)
+    var max = new Date(year, month-1, 0).getDate();
     tds.forEach(empty);
-    for (var i=1; i<=max; i++)
-      tds[i+offset].appendChild(cell(i));
+    for (var i=0; i<max; i++)
+      tds[i+offset].appendChild(cell(i+1));
     var today = new Date();
-    if (year === today.getFullYear() && month === today.getMonth()+1) {
-      console.log(today.getDate()+offset);
-      tds[today.getDate()+offset].firstChild.className += " today";
-    }
+    if (year === today.getFullYear() && month-1 === today.getMonth())
+      tds[today.getDate()+offset-1].className = "today";
   }
 
   update();
 
 });
 
-},{"./compet.js":1,"./documents.js":3,"./workout":6}],5:[function(require,module,exports){
+},{"./compet.js":1,"./documents.js":3,"./holliday.js":4,"./workout":7}],6:[function(require,module,exports){
 
 var Templates = require("./templates.js");
 
@@ -368,7 +400,7 @@ module.exports = function (workout) {
   }));
 };
 
-},{"./templates.js":7}],6:[function(require,module,exports){
+},{"./templates.js":8}],7:[function(require,module,exports){
 
 var Workouts = require("./workouts.js");
 var Build = require("./build.js");
@@ -383,12 +415,12 @@ module.exports = function (date, div) {
   }
 };
 
-},{"./build.js":5,"./workouts.js":8}],7:[function(require,module,exports){
+},{"./build.js":6,"./workouts.js":9}],8:[function(require,module,exports){
 module.exports = {
   "rotato": "30s arm-circle-large-forward +\n30s arm-circle-large-backward +\n30s arm-circle-small-forward +\n30s arm-circle-small-backward +\n6 * (22s burpee + 8s rest) +\n60s rest +\n4 * (60s elastic-butterfly +\n     10s rest +\n     30s elastic-rotator-internal-left +\n     10s rest +\n     60s elastic-row +\n     10s rest +\n     30s elastic-rotator-internal-right +\n     10s rest +\n     60s elastic-butterfly +\n     10s rest +\n     30s elastic-rotator-external-left +\n     10s rest +\n     60s elastic-row +\n     10s rest +\n     30s elastic-rotator-external-right)",
   "warmup1": "$1 * ($2 high-knee +\n      $2 butt-kicker +\n      $2 burpee-1 +\n      $2 burpee-2 +\n      $2 pushup-serratus +\n      $2 flutter-kick +\n      $2 rest)"
 };
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 module.exports = {
   "2016-09-10": "  3 * (45s mountain-climbing + 15s rest)\n+ 60s rest\n+ 6 * (20s burpee + 10s rest)\n+ 60s rest\n+ 3 * (45s plank-front + 15s rest)\n+ 60s rest\n+ 3 * (30s plank-left + 30s plank-right)\n+ 60s rest\n+ 3 * (30s plank-front + 30s plank-back)\n+ 60s rest\n+ 3 * (20s plank-leg-left + 10s rest + 20s plank-leg-right + 10s rest)\n+ 60s rest\n+ 6 * (3 pushup-close in 15s + 3 pushup-large in 15s)\n+ 60s rest\n+ 3 * (45s elastic-butterfly + 15s rest)\n+ 60s rest\n+ 3 * (45s elastic-butterfly + 15s rest)",
   "2016-09-13": "  3 * (30s butt-kicker + 30s high-knee)\n+ 60s rest\n+ 3 * (  20s mountain-climbing + 10s rest\n       + 20s burpee            + 10s rest)\n+ 60s rest\n+ 3 * (   20s burpee-1 + 10s rest\n        + 20s burpee-2 + 10s rest)\n+ 60s rest\n+ 12 * (4 squat in 15s)\n+ 60s rest\n+ 3 * (40s plank-front + 20s rest)\n+ 60s rest\n+ 3 * (30s plank-left + 30s plank-right)\n+ 60s rest\n+ 6 * (3 pushup-close in 15s + 3 pushup-large in 15s)\n+ 60s rest\n+ 3 * (45s elastic-butterfly + 15s rest)\n+ 60s rest\n+ 3 * (45s elastic-butterfly + 15s rest)",
@@ -412,7 +444,6 @@ module.exports = {
   "2016-11-27": "  30s arm-circle-large-forward\n+ 30s arm-circle-large-backward\n+ 30s arm-circle-small-forward\n+ 30s arm-circle-small-backward\n+ 6 * (22s burpee + 8s rest)\n+ 60s rest\n+ 4 * (  60s elastic-butterfly\n       + 10s rest\n       + 30s elastic-rotator-internal-left\n       + 10s rest\n       + 60s elastic-row\n       + 10s rest\n       + 30s elastic-rotator-internal-right\n       + 10s rest\n       + 60s elastic-butterfly\n       + 10s rest\n       + 30s elastic-rotator-external-left\n       + 10s rest\n       + 60s elastic-row\n       + 10s rest\n       + 30s elastic-rotator-external-right)",
   "2016-12-06": "4 * (2 * (45s elbow-plank-front + 15s rest +\n          45s elbow-plank-back + 15s rest) +\n     4 * (45s elastic-butterfly + 15s rest) +\n     2 * (45s elbow-plank-left + 15s rest +\n          45s elbow-plank-right + 15s rest))",
   "2017-01-04": "4 * (30s high-knee +\n     30s elbow-plank-front +\n     30s squat +\n     30s elbow-plank-back +\n     30s burpee) +\n4 * (60s rest +\n     30s pushup-serratus +\n     30s elastic-row +\n     60s elastic-butterfly +\n     30s elastic-rotator-internal-right +\n     30s elastic-rotator-internal-left +\n     60s rest +\n     30s pushup-serratus +\n     30s elastic-row +\n     60s elastic-butterfly +\n     30s elastic-rotator-external-right +\n     30s elastic-rotator-external-left)",
-  "2017-01-10": "4 * (30s high-knee +\n     30s butt-kicker +\n     30s burpee-1 +\n     30s burpee-2 +\n     30s pushup-serratus +\n     30s flutter-kick +\n     30s rest)  +\n120s rest +\n4 *  (45s elastic-butterfly + 15s rest +\n      45s superman-plank + 15s rest +\n      45s elastic-row + 15s rest +\n      45s superman + 15s rest +\n      45s flutter-kick + 15s rest +\n      45s dip + 15s rest)",
-  "2017-01-12": "$warmup1(3,10s)"
+  "2017-01-10": "4 * (30s high-knee +\n     30s butt-kicker +\n     30s burpee-1 +\n     30s burpee-2 +\n     30s pushup-serratus +\n     30s flutter-kick +\n     30s rest)  +\n120s rest +\n4 *  (45s elastic-butterfly + 15s rest +\n      45s superman-plank + 15s rest +\n      45s elastic-row + 15s rest +\n      45s superman + 15s rest +\n      45s flutter-kick + 15s rest +\n      45s dip + 15s rest)"
 };
-},{}]},{},[4]);
+},{}]},{},[5]);

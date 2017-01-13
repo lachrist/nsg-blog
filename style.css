@@ -27,8 +27,12 @@ td, th {
 }
 
 .today {
-  font-weight: 900;
-  color: red;
+  border: 4px solid red;
+}
+
+.holliday {
+  background-color: green;
+  color: white;
 }
 
 .workout {
