@@ -230,15 +230,15 @@ module.exports = {
 module.exports = [
   "document/licence.pdf",
   "document/minima/2016-BCBW.pdf",
-  "document/minima/2016-BE-50m.pdf",
   "document/minima/2016-BE-25m.pdf",
+  "document/minima/2016-BE-50m.pdf",
   "document/minima/2017-FR-JEUNES-50m.pdf",
   "document/minima/2017-FR-OPEN-50m.pdf"
 ];
 },{}],4:[function(require,module,exports){
 
 var days = [
-  "2017-09-27",
+  "2016-09-27",
   "2016-11-11",
   "2017-04-17",
   "2017-05-01",
