@@ -1,0 +1,21 @@
+30s arm-circle-large-forward +
+30s arm-circle-large-backward +
+30s arm-circle-small-forward +
+30s arm-circle-small-backward +
+30s burpee-1 +
+30s burpee-2 +
+30s burpee +
+30s rest +
+4 * (30s flutter-kick +
+     60s elbow-plank-left +
+     90s superman-alternate +
+     120s elastic-butterfly +
+     60s rest +
+     30s flutter-kick +
+     60s elbow-plank-right +
+     90s superman-alternate +
+     120s elastic-butterfly +
+     60s rest) +
+240s elastic-butterfly +
+60s rest +
+240s elastic-butterfly

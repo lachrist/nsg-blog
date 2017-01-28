@@ -2,24 +2,33 @@
 
 var Compets = require("./compets.js");
 
-function translate (word) { return translations[word] || word }
-var translations = {
-  "schedule.pdf": "Horaire.pdf",
+var translate = (function (translations) {
+  return function (word) { return translations[word] || word };
+} ({
+  "invitation.pdf": "Invitation.pdf",
   "inscription.pdf": "Inscriptions.pdf",
+  "schedule.pdf": "Horaire.pdf",
   "startlist.pdf": "Départs.pdf",
   "result.pdf": "Résultats.pdf"
-};
+}));
 
-function sort (x, y) {
-  if (ordering.indexOf(x) === -1 && ordering.indexOf(y) === -1)
-    return x.localeCompare(y);
-  if (ordering.indexOf(x) === -1)
-    return 1;
-  if (ordering.indexOf(y) === -1)
-    return -1;
-  return ordering.indexOf(x) > ordering.indexOf(y) ? 1 : -1;
-}
-var ordering = ["schedule.pdf", "inscription.pdf", "startlist.pdf", "result.pdf"];
+var sort = (function (ordering) {
+  return function (x, y) {
+    if (ordering.indexOf(x) === -1 && ordering.indexOf(y) === -1)
+      return x.localeCompare(y);
+    if (ordering.indexOf(x) === -1)
+      return 1;
+    if (ordering.indexOf(y) === -1)
+      return -1;
+    return ordering.indexOf(x) > ordering.indexOf(y) ? 1 : -1;
+  };
+} ([
+  "invitation.pdf",
+  "inscription.pdf",
+  "schedule.pdf",
+  "startlist.pdf",
+  "result.pdf"
+]));
 
 module.exports = function (date, div1) {
   if (date in Compets) {
@@ -41,52 +50,52 @@ module.exports = {
   "2016-10-08": {
     "name": "BCBW I @Blocry",
     "docs": [
+      "invitation.pdf",
       "result.lxf",
       "result.pdf",
-      "schedule.pdf",
       "startlist.pdf"
     ]
   },
   "2016-10-09": {
     "name": "BCBW II @Blocry",
     "docs": [
+      "invitation.pdf",
       "result.lxf",
       "result.pdf",
-      "schedule.pdf",
       "startlist.pdf"
     ]
   },
   "2016-10-22": {
     "name": "BCBW III @Blocry",
     "docs": [
+      "invitation.pdf",
       "result.lxf",
       "result.pdf",
-      "schedule.pdf",
       "startlist.pdf"
     ]
   },
   "2016-10-23": {
     "name": "BCBW IV @Blocry",
     "docs": [
+      "invitation.pdf",
       "result.lxf",
       "result.pdf",
-      "schedule.pdf",
       "startlist.pdf"
     ]
   },
   "2016-11-19": {
     "name": "Richard Anis I @Blocry",
     "docs": [
+      "invitation.pdf",
       "result.lxf",
       "result.pdf",
-      "schedule.pdf",
       "startlist.pdf"
     ]
   },
   "2016-11-20": {
     "name": "Richard Anis II @Blocry",
     "docs": [
-      "schedule.pdf",
+      "invitation.pdf",
       "startlist.pdf"
     ]
   },
@@ -104,15 +113,15 @@ module.exports = {
   "2016-12-27": {
     "name": "Laatste Kans @Leuven",
     "docs": [
-      "schedule.pdf"
+      "invitation.pdf"
     ]
   },
   "2017-01-08": {
     "name": "Frank Pepermans @Wezenberg",
     "docs": [
+      "invitation.pdf",
       "result.lxf",
       "result.pdf",
-      "schedule.pdf",
       "startlist.pdf"
     ]
   },
@@ -120,7 +129,7 @@ module.exports = {
     "name": "Ch Fr 2003-2006 @Helios",
     "docs": [
       "invitation.lxf",
-      "schedule.pdf"
+      "invitation.pdf"
     ]
   },
   "2017-01-22": {
@@ -130,8 +139,11 @@ module.exports = {
   "2017-01-29": {
     "name": "Eliminatoires Georges @Blocry",
     "docs": [
+      "inscription.pdf",
       "invitation.lxf",
-      "schedule.pdf"
+      "invitation.pdf",
+      "schedule.pdf",
+      "startlist.pdf"
     ]
   },
   "2017-02-18": {
@@ -362,7 +374,7 @@ window.addEventListener("load", function () {
     document.getElementById("calendar-title").textContent = months[month] + " " + year;
     var offset = ((new Date(year, month-1, 1).getDay()) -1);
     (offset === -1) && (offset = 6)
-    var max = new Date(year, month-1, 0).getDate();
+    var max = new Date(year, month, 0).getDate();
     tds.forEach(empty);
     for (var i=0; i<max; i++)
       tds[i+offset].appendChild(cell(i+1));
@@ -444,6 +456,9 @@ module.exports = {
   "2016-11-27": "  30s arm-circle-large-forward\n+ 30s arm-circle-large-backward\n+ 30s arm-circle-small-forward\n+ 30s arm-circle-small-backward\n+ 6 * (22s burpee + 8s rest)\n+ 60s rest\n+ 4 * (  60s elastic-butterfly\n       + 10s rest\n       + 30s elastic-rotator-internal-left\n       + 10s rest\n       + 60s elastic-row\n       + 10s rest\n       + 30s elastic-rotator-internal-right\n       + 10s rest\n       + 60s elastic-butterfly\n       + 10s rest\n       + 30s elastic-rotator-external-left\n       + 10s rest\n       + 60s elastic-row\n       + 10s rest\n       + 30s elastic-rotator-external-right)",
   "2016-12-06": "4 * (2 * (45s elbow-plank-front + 15s rest +\n          45s elbow-plank-back + 15s rest) +\n     4 * (45s elastic-butterfly + 15s rest) +\n     2 * (45s elbow-plank-left + 15s rest +\n          45s elbow-plank-right + 15s rest))",
   "2017-01-04": "4 * (30s high-knee +\n     30s elbow-plank-front +\n     30s squat +\n     30s elbow-plank-back +\n     30s burpee) +\n4 * (60s rest +\n     30s pushup-serratus +\n     30s elastic-row +\n     60s elastic-butterfly +\n     30s elastic-rotator-internal-right +\n     30s elastic-rotator-internal-left +\n     60s rest +\n     30s pushup-serratus +\n     30s elastic-row +\n     60s elastic-butterfly +\n     30s elastic-rotator-external-right +\n     30s elastic-rotator-external-left)",
-  "2017-01-10": "4 * (30s high-knee +\n     30s butt-kicker +\n     30s burpee-1 +\n     30s burpee-2 +\n     30s pushup-serratus +\n     30s flutter-kick +\n     30s rest)  +\n120s rest +\n4 *  (45s elastic-butterfly + 15s rest +\n      45s superman-plank + 15s rest +\n      45s elastic-row + 15s rest +\n      45s superman + 15s rest +\n      45s flutter-kick + 15s rest +\n      45s dip + 15s rest)"
+  "2017-01-10": "4 * (30s high-knee +\n     30s butt-kicker +\n     30s burpee-1 +\n     30s burpee-2 +\n     30s pushup-serratus +\n     30s flutter-kick +\n     30s rest)  +\n120s rest +\n4 *  (45s elastic-butterfly + 15s rest +\n      45s superman-plank + 15s rest +\n      45s elastic-row + 15s rest +\n      45s superman + 15s rest +\n      45s flutter-kick + 15s rest +\n      45s dip + 15s rest)",
+  "2017-01-15": "30s arm-circle-large-forward +\n30s arm-circle-large-backward +\n30s arm-circle-small-forward +\n30s arm-circle-small-backward +\n2 * (2 * (30s elastic-rotator-internal-left +\n          30s elastic-rotator-internal-right +\n          30s elastic-rotator-external-left +\n          30s elastic-rotator-external-right) +\n     4 * (180s elastic-butterfly + 60s rest) +\n     4 * (60s elastic-row + 30s rest) +\n     6 * (20s pushup-serratus + 10s rest))",
+  "2017-01-17": "30s high-knee +\n30s butt-kicker +\n30s lunge +\n30s mountain-climbing +\n30s burpee-1 +\n30s burpee-2 +\n30s squat +\n60s rest +\n6 * (30s elbow-plank-left +\n     30s elbow-plank-right +\n     30s elbow-plank-left +\n     30s elbow-plank-right +\n     30s rest +\n     180s elastic-butterfly +\n     30s rest +\n     30s pushup-plank-arm-left +\n     30s pushup-plank-arm-right +\n     30s pushup-plank-leg-left +\n     30s pushup-plank-leg-right)",
+  "2017-01-24": "30s arm-circle-large-forward +\n30s arm-circle-large-backward +\n30s arm-circle-small-forward +\n30s arm-circle-small-backward +\n30s burpee-1 +\n30s burpee-2 +\n30s burpee +\n30s rest +\n4 * (30s flutter-kick +\n     60s elbow-plank-left +\n     90s superman-alternate +\n     120s elastic-butterfly +\n     60s rest +\n     30s flutter-kick +\n     60s elbow-plank-right +\n     90s superman-alternate +\n     120s elastic-butterfly +\n     60s rest) +\n240s elastic-butterfly +\n60s rest +\n240s elastic-butterfly"
 };
 },{}]},{},[5]);

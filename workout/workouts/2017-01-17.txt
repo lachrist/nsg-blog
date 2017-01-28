@@ -1,0 +1,19 @@
+30s high-knee +
+30s butt-kicker +
+30s lunge +
+30s mountain-climbing +
+30s burpee-1 +
+30s burpee-2 +
+30s squat +
+60s rest +
+6 * (30s elbow-plank-left +
+     30s elbow-plank-right +
+     30s elbow-plank-left +
+     30s elbow-plank-right +
+     30s rest +
+     180s elastic-butterfly +
+     30s rest +
+     30s pushup-plank-arm-left +
+     30s pushup-plank-arm-right +
+     30s pushup-plank-leg-left +
+     30s pushup-plank-leg-right)

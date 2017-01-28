@@ -2,52 +2,52 @@ module.exports = {
   "2016-10-08": {
     "name": "BCBW I @Blocry",
     "docs": [
+      "invitation.pdf",
       "result.lxf",
       "result.pdf",
-      "schedule.pdf",
       "startlist.pdf"
     ]
   },
   "2016-10-09": {
     "name": "BCBW II @Blocry",
     "docs": [
+      "invitation.pdf",
       "result.lxf",
       "result.pdf",
-      "schedule.pdf",
       "startlist.pdf"
     ]
   },
   "2016-10-22": {
     "name": "BCBW III @Blocry",
     "docs": [
+      "invitation.pdf",
       "result.lxf",
       "result.pdf",
-      "schedule.pdf",
       "startlist.pdf"
     ]
   },
   "2016-10-23": {
     "name": "BCBW IV @Blocry",
     "docs": [
+      "invitation.pdf",
       "result.lxf",
       "result.pdf",
-      "schedule.pdf",
       "startlist.pdf"
     ]
   },
   "2016-11-19": {
     "name": "Richard Anis I @Blocry",
     "docs": [
+      "invitation.pdf",
       "result.lxf",
       "result.pdf",
-      "schedule.pdf",
       "startlist.pdf"
     ]
   },
   "2016-11-20": {
     "name": "Richard Anis II @Blocry",
     "docs": [
-      "schedule.pdf",
+      "invitation.pdf",
       "startlist.pdf"
     ]
   },
@@ -65,15 +65,15 @@ module.exports = {
   "2016-12-27": {
     "name": "Laatste Kans @Leuven",
     "docs": [
-      "schedule.pdf"
+      "invitation.pdf"
     ]
   },
   "2017-01-08": {
     "name": "Frank Pepermans @Wezenberg",
     "docs": [
+      "invitation.pdf",
       "result.lxf",
       "result.pdf",
-      "schedule.pdf",
       "startlist.pdf"
     ]
   },
@@ -81,7 +81,7 @@ module.exports = {
     "name": "Ch Fr 2003-2006 @Helios",
     "docs": [
       "invitation.lxf",
-      "schedule.pdf"
+      "invitation.pdf"
     ]
   },
   "2017-01-22": {
@@ -91,8 +91,11 @@ module.exports = {
   "2017-01-29": {
     "name": "Eliminatoires Georges @Blocry",
     "docs": [
+      "inscription.pdf",
       "invitation.lxf",
-      "schedule.pdf"
+      "invitation.pdf",
+      "schedule.pdf",
+      "startlist.pdf"
     ]
   },
   "2017-02-18": {

@@ -93,7 +93,7 @@ window.addEventListener("load", function () {
     document.getElementById("calendar-title").textContent = months[month] + " " + year;
     var offset = ((new Date(year, month-1, 1).getDay()) -1);
     (offset === -1) && (offset = 6)
-    var max = new Date(year, month-1, 0).getDate();
+    var max = new Date(year, month, 0).getDate();
     tds.forEach(empty);
     for (var i=0; i<max; i++)
       tds[i+offset].appendChild(cell(i+1));

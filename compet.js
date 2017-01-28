@@ -1,24 +1,33 @@
 
 var Compets = require("./compets.js");
 
-function translate (word) { return translations[word] || word }
-var translations = {
-  "schedule.pdf": "Horaire.pdf",
+var translate = (function (translations) {
+  return function (word) { return translations[word] || word };
+} ({
+  "invitation.pdf": "Invitation.pdf",
   "inscription.pdf": "Inscriptions.pdf",
+  "schedule.pdf": "Horaire.pdf",
   "startlist.pdf": "Départs.pdf",
   "result.pdf": "Résultats.pdf"
-};
+}));
 
-function sort (x, y) {
-  if (ordering.indexOf(x) === -1 && ordering.indexOf(y) === -1)
-    return x.localeCompare(y);
-  if (ordering.indexOf(x) === -1)
-    return 1;
-  if (ordering.indexOf(y) === -1)
-    return -1;
-  return ordering.indexOf(x) > ordering.indexOf(y) ? 1 : -1;
-}
-var ordering = ["schedule.pdf", "inscription.pdf", "startlist.pdf", "result.pdf"];
+var sort = (function (ordering) {
+  return function (x, y) {
+    if (ordering.indexOf(x) === -1 && ordering.indexOf(y) === -1)
+      return x.localeCompare(y);
+    if (ordering.indexOf(x) === -1)
+      return 1;
+    if (ordering.indexOf(y) === -1)
+      return -1;
+    return ordering.indexOf(x) > ordering.indexOf(y) ? 1 : -1;
+  };
+} ([
+  "invitation.pdf",
+  "inscription.pdf",
+  "schedule.pdf",
+  "startlist.pdf",
+  "result.pdf"
+]));
 
 module.exports = function (date, div1) {
   if (date in Compets) {
