@@ -94,6 +94,9 @@ module.exports = {
       "inscription.pdf",
       "invitation.lxf",
       "invitation.pdf",
+      "medal.pdf",
+      "result.lxf",
+      "result.pdf",
       "schedule.pdf",
       "startlist.pdf"
     ]
@@ -101,17 +104,30 @@ module.exports = {
   "2017-02-18": {
     "name": "Ch Fr 2002+ @Helios",
     "docs": [
+      "NSG Open.pdf",
       "invitation.lxf",
-      "schedule.pdf"
+      "program.pdf",
+      "schedule.pdf",
+      "timing.pdf"
     ]
   },
   "2017-02-19": {
     "name": "Ch Fr 2002+ @Helios",
-    "docs": []
+    "docs": [
+      "program.pdf"
+    ]
   },
   "2017-03-11": {
     "name": "Meeting des Sprints @Blocry",
-    "docs": []
+    "docs": [
+      "schedule.pdf"
+    ]
+  },
+  "2017-03-12": {
+    "name": "Meeting des Sprints @Blocry",
+    "docs": [
+      "schedule.pdf"
+    ]
   },
   "2017-03-17": {
     "name": "Grand Prix @Seraing",

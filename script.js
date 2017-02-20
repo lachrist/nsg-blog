@@ -142,6 +142,9 @@ module.exports = {
       "inscription.pdf",
       "invitation.lxf",
       "invitation.pdf",
+      "medal.pdf",
+      "result.lxf",
+      "result.pdf",
       "schedule.pdf",
       "startlist.pdf"
     ]
@@ -149,17 +152,30 @@ module.exports = {
   "2017-02-18": {
     "name": "Ch Fr 2002+ @Helios",
     "docs": [
+      "NSG Open.pdf",
       "invitation.lxf",
-      "schedule.pdf"
+      "program.pdf",
+      "schedule.pdf",
+      "timing.pdf"
     ]
   },
   "2017-02-19": {
     "name": "Ch Fr 2002+ @Helios",
-    "docs": []
+    "docs": [
+      "program.pdf"
+    ]
   },
   "2017-03-11": {
     "name": "Meeting des Sprints @Blocry",
-    "docs": []
+    "docs": [
+      "schedule.pdf"
+    ]
+  },
+  "2017-03-12": {
+    "name": "Meeting des Sprints @Blocry",
+    "docs": [
+      "schedule.pdf"
+    ]
   },
   "2017-03-17": {
     "name": "Grand Prix @Seraing",
@@ -429,8 +445,10 @@ module.exports = function (date, div) {
 
 },{"./build.js":6,"./workouts.js":9}],8:[function(require,module,exports){
 module.exports = {
-  "rotato": "30s arm-circle-large-forward +\n30s arm-circle-large-backward +\n30s arm-circle-small-forward +\n30s arm-circle-small-backward +\n6 * (22s burpee + 8s rest) +\n60s rest +\n4 * (60s elastic-butterfly +\n     10s rest +\n     30s elastic-rotator-internal-left +\n     10s rest +\n     60s elastic-row +\n     10s rest +\n     30s elastic-rotator-internal-right +\n     10s rest +\n     60s elastic-butterfly +\n     10s rest +\n     30s elastic-rotator-external-left +\n     10s rest +\n     60s elastic-row +\n     10s rest +\n     30s elastic-rotator-external-right)",
-  "warmup1": "$1 * ($2 high-knee +\n      $2 butt-kicker +\n      $2 burpee-1 +\n      $2 burpee-2 +\n      $2 pushup-serratus +\n      $2 flutter-kick +\n      $2 rest)"
+  "butterfly1": "$1 * (120s elastic-butterfly + 30s rest)",
+  "rotator1": "$1 * (30s elastic-rotator-external-left +\n      30s elastic-rotator-internal-left +\n      60s elbow-plank-left +\n      30s rest +\n      30s elastic-rotator-external-right +\n      30s elastic-rotator-internal-right +\n      60s elbow-plank-right +\n      30s rest)",
+  "warmup1": "$1 * ($2 high-knee +\n      $2 butt-kicker +\n      $2 burpee-1 +\n      $2 burpee-2 +\n      $2 pushup-serratus +\n      $2 flutter-kick +\n      $2 rest)",
+  "warmup2": "30s arm-circle-large-forward +\n30s arm-circle-large-backward +\n30s arm-circle-small-forward +\n30s arm-circle-small-backward +\n30s burpee-1 +\n30s burpee-2 +\n30s burpee"
 };
 },{}],9:[function(require,module,exports){
 module.exports = {
@@ -459,6 +477,7 @@ module.exports = {
   "2017-01-10": "4 * (30s high-knee +\n     30s butt-kicker +\n     30s burpee-1 +\n     30s burpee-2 +\n     30s pushup-serratus +\n     30s flutter-kick +\n     30s rest)  +\n120s rest +\n4 *  (45s elastic-butterfly + 15s rest +\n      45s superman-plank + 15s rest +\n      45s elastic-row + 15s rest +\n      45s superman + 15s rest +\n      45s flutter-kick + 15s rest +\n      45s dip + 15s rest)",
   "2017-01-15": "30s arm-circle-large-forward +\n30s arm-circle-large-backward +\n30s arm-circle-small-forward +\n30s arm-circle-small-backward +\n2 * (2 * (30s elastic-rotator-internal-left +\n          30s elastic-rotator-internal-right +\n          30s elastic-rotator-external-left +\n          30s elastic-rotator-external-right) +\n     4 * (180s elastic-butterfly + 60s rest) +\n     4 * (60s elastic-row + 30s rest) +\n     6 * (20s pushup-serratus + 10s rest))",
   "2017-01-17": "30s high-knee +\n30s butt-kicker +\n30s lunge +\n30s mountain-climbing +\n30s burpee-1 +\n30s burpee-2 +\n30s squat +\n60s rest +\n6 * (30s elbow-plank-left +\n     30s elbow-plank-right +\n     30s elbow-plank-left +\n     30s elbow-plank-right +\n     30s rest +\n     180s elastic-butterfly +\n     30s rest +\n     30s pushup-plank-arm-left +\n     30s pushup-plank-arm-right +\n     30s pushup-plank-leg-left +\n     30s pushup-plank-leg-right)",
-  "2017-01-24": "30s arm-circle-large-forward +\n30s arm-circle-large-backward +\n30s arm-circle-small-forward +\n30s arm-circle-small-backward +\n30s burpee-1 +\n30s burpee-2 +\n30s burpee +\n30s rest +\n4 * (30s flutter-kick +\n     60s elbow-plank-left +\n     90s superman-alternate +\n     120s elastic-butterfly +\n     60s rest +\n     30s flutter-kick +\n     60s elbow-plank-right +\n     90s superman-alternate +\n     120s elastic-butterfly +\n     60s rest) +\n240s elastic-butterfly +\n60s rest +\n240s elastic-butterfly"
+  "2017-01-24": "30s arm-circle-large-forward +\n30s arm-circle-large-backward +\n30s arm-circle-small-forward +\n30s arm-circle-small-backward +\n30s burpee-1 +\n30s burpee-2 +\n30s burpee +\n30s rest +\n4 * (30s flutter-kick +\n     60s elbow-plank-left +\n     90s superman-alternate +\n     120s elastic-butterfly +\n     60s rest +\n     30s flutter-kick +\n     60s elbow-plank-right +\n     90s superman-alternate +\n     120s elastic-butterfly +\n     60s rest) +\n240s elastic-butterfly +\n60s rest +\n240s elastic-butterfly",
+  "2017-02-04": "$warmup2() +\n$rotator1(5) +\n$butterfly1(10)"
 };
 },{}]},{},[5]);

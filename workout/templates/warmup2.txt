@@ -1,0 +1,7 @@
+30s arm-circle-large-forward +
+30s arm-circle-large-backward +
+30s arm-circle-small-forward +
+30s arm-circle-small-backward +
+30s burpee-1 +
+30s burpee-2 +
+30s burpee

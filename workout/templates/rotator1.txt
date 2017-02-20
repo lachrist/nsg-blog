@@ -1,0 +1,8 @@
+$1 * (30s elastic-rotator-external-left +
+      30s elastic-rotator-internal-left +
+      60s elbow-plank-left +
+      30s rest +
+      30s elastic-rotator-external-right +
+      30s elastic-rotator-internal-right +
+      60s elbow-plank-right +
+      30s rest)
