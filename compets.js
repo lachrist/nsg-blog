@@ -120,6 +120,13 @@ module.exports = {
   "2017-03-11": {
     "name": "Meeting des Sprints @Blocry",
     "docs": [
+      "Forfaits et disqualifications.xls",
+      "Meeting des Sprints 2017 - Startlist.pdf",
+      "Meeting des Sprints 2017 - horaire.pdf",
+      "Médailles_club Meeting des Sprints-Eliminatoires Dauven  2017.pdf",
+      "Médailles_épreuve Meeting des Sprints-Eliminatoires Dauven  2017.pdf",
+      "Résultats Meeting des Sprints-Eliminatoires Dauven  2017.lxf",
+      "Résultats Meeting des Sprints-Eliminatoires Dauven  2017.pdf",
       "schedule.pdf"
     ]
   },
