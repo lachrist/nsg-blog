@@ -1,0 +1,16 @@
+30s arm-circle-large-forward +
+30s arm-circle-large-backward +
+30s arm-circle-small-forward +
+30s arm-circle-small-backward +
+30s burpee-1 +
+30s mountain-climbing +
+30s burpee-2 +
+30s mountain-climbing +
+30s burpee +
+30s rest +
+10 * (15 pull-over in 45s +
+      15 bench-press in 45s +
+      15 pull-down in 45s +
+      15 row in 45s +
+      15 dumbbell-lateral-raise in 45s +
+      15 ab-wheel in 45s)

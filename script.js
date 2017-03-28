@@ -175,6 +175,7 @@ module.exports = {
       "Médailles_épreuve Meeting des Sprints-Eliminatoires Dauven  2017.pdf",
       "Résultats Meeting des Sprints-Eliminatoires Dauven  2017.lxf",
       "Résultats Meeting des Sprints-Eliminatoires Dauven  2017.pdf",
+      "inscriptions.pdf",
       "schedule.pdf"
     ]
   },
@@ -191,12 +192,26 @@ module.exports = {
   "2017-03-18": {
     "name": "Fête CNSW @Sportcity",
     "docs": [
+      "Classement total.pdf",
+      "Résultats 180317.lxf",
+      "Résultats 180317.pdf",
+      "confirmation NSG.pdf",
       "schedule.pdf"
     ]
   },
   "2017-03-25": {
     "name": "Grand Prix @Mons",
-    "docs": []
+    "docs": [
+      "CCM_avant-programme_Grand_Prix_Ville_Mons_25032017.pdf",
+      "Classement_interclubs_points_FINA_2016_1er_GP_Ville_Mons_25032017.pdf",
+      "Invitation_Grand_Prix_Ville_Mons_Challenge_S&R_25032017.pdf",
+      "NSG-MONS.lxf",
+      "Performances_individuelles_points_FINA_2016_1er_GP_Ville_Mons_25032017.pdf",
+      "Résultats_complets_1er_GP_Ville_Mons_25032017.lxf",
+      "Résultats_complets_1er_GP_Ville_Mons_25032017.pdf",
+      "Statistiques_médailles_1er_GP_Ville_Mons_25032017.pdf",
+      "inscriptions.pdf"
+    ]
   },
   "2017-03-29": {
     "name": "Finales Georges @Seraing",
@@ -208,6 +223,20 @@ module.exports = {
   },
   "2017-04-22": {
     "name": "Ethias Trophy @Seraing",
+    "docs": []
+  },
+  "2017-04-28": {
+    "name": "Aernouts @Bastogne",
+    "docs": [
+      "cnb2830042017.pdf"
+    ]
+  },
+  "2017-04-29": {
+    "name": "Aernouts @Bastogne",
+    "docs": []
+  },
+  "2017-04-30": {
+    "name": "Aernouts @Bastogne",
     "docs": []
   },
   "2017-05-12": {
@@ -265,8 +294,8 @@ module.exports = {
 module.exports = [
   "document/licence.pdf",
   "document/minima/2016-BCBW.pdf",
-  "document/minima/2016-BE-25m.pdf",
   "document/minima/2016-BE-50m.pdf",
+  "document/minima/2016-BE-25m.pdf",
   "document/minima/2017-FR-JEUNES-50m.pdf",
   "document/minima/2017-FR-OPEN-50m.pdf"
 ];
@@ -486,6 +515,7 @@ module.exports = {
   "2017-01-17": "30s high-knee +\n30s butt-kicker +\n30s lunge +\n30s mountain-climbing +\n30s burpee-1 +\n30s burpee-2 +\n30s squat +\n60s rest +\n6 * (30s elbow-plank-left +\n     30s elbow-plank-right +\n     30s elbow-plank-left +\n     30s elbow-plank-right +\n     30s rest +\n     180s elastic-butterfly +\n     30s rest +\n     30s pushup-plank-arm-left +\n     30s pushup-plank-arm-right +\n     30s pushup-plank-leg-left +\n     30s pushup-plank-leg-right)",
   "2017-01-24": "30s arm-circle-large-forward +\n30s arm-circle-large-backward +\n30s arm-circle-small-forward +\n30s arm-circle-small-backward +\n30s burpee-1 +\n30s burpee-2 +\n30s burpee +\n30s rest +\n4 * (30s flutter-kick +\n     60s elbow-plank-left +\n     90s superman-alternate +\n     120s elastic-butterfly +\n     60s rest +\n     30s flutter-kick +\n     60s elbow-plank-right +\n     90s superman-alternate +\n     120s elastic-butterfly +\n     60s rest) +\n240s elastic-butterfly +\n60s rest +\n240s elastic-butterfly",
   "2017-02-04": "$warmup2() +\n$rotator1(5) +\n$butterfly1(10)",
-  "2017-02-28": "30s arm-circle-large-forward +\n30s arm-circle-large-backward +\n30s arm-circle-small-forward +\n30s arm-circle-small-backward +\n30s burpee-1 +\n30s mountain-climbing +\n30s burpee-2 +\n30s mountain-climbing +\n30s burpee +\n30s rest +\n10 * (10 pull-over in 30s +\n      5 dumbbell-row-left in 15s + \n      5 dumbbell-row-right in 15s +\n      5 dumbbell-row-left in 15s + \n      5 dumbbell-row-right in 15s +\n      10 bench-press in 30s +\n      10 pull-down in 30s +\n      10 dumbbell-lateral-raise in 30s +\n      10 pull-down in 30s +\n      10 ab-wheel in 30s)"
+  "2017-02-28": "30s arm-circle-large-forward +\n30s arm-circle-large-backward +\n30s arm-circle-small-forward +\n30s arm-circle-small-backward +\n30s burpee-1 +\n30s mountain-climbing +\n30s burpee-2 +\n30s mountain-climbing +\n30s burpee +\n30s rest +\n10 * (10 pull-over in 30s +\n      5 dumbbell-row-left in 15s + \n      5 dumbbell-row-right in 15s +\n      5 dumbbell-row-left in 15s + \n      5 dumbbell-row-right in 15s +\n      10 bench-press in 30s +\n      10 pull-down in 30s +\n      10 dumbbell-lateral-raise in 30s +\n      10 pull-down in 30s +\n      10 ab-wheel in 30s)",
+  "2017-03-15": "30s arm-circle-large-forward +\n30s arm-circle-large-backward +\n30s arm-circle-small-forward +\n30s arm-circle-small-backward +\n30s burpee-1 +\n30s mountain-climbing +\n30s burpee-2 +\n30s mountain-climbing +\n30s burpee +\n30s rest +\n10 * (15 pull-over in 45s +\n      15 bench-press in 45s +\n      15 pull-down in 45s +\n      15 row in 45s +\n      15 dumbbell-lateral-raise in 45s +\n      15 ab-wheel in 45s)"
 };
 },{}]},{},[5]);
