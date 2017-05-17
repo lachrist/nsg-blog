@@ -2,6 +2,7 @@
 var Fs = require("fs");
 var Browserify = require("browserify");
 var RecursiveReaddir = require("recursive-readdir");
+var Season = require("./season.js");
 
 function clean (filename) { return filename !== ".DS_Store" }
 
@@ -17,13 +18,13 @@ Fs.writeFileSync(__dirname+"/workout/templates.js", "module.exports = "+JSON.str
 Fs.writeFileSync(__dirname+"/workout/workouts.js", "module.exports = "+JSON.stringify(collect(__dirname+"/workout/workouts"), null, 2)+";", "utf8");
 
 (function (compets) {
-  Fs.readdirSync(__dirname+"/compet").filter(clean).forEach(function (filename) {
+  Fs.readdirSync(__dirname+"/compet/"+Season).filter(clean).forEach(function (filename) {
     var parts = /^([0-9]{4}-[0-9]{2}-[0-9]{2}) (.*)$/.exec(filename);
     if (parts === null)
       throw "Wrong competition format: "+filename+"\n";
     compets[parts[1]] = {
       name: parts[2],
-      docs: Fs.readdirSync(__dirname+"/compet/"+filename).filter(clean)
+      docs: Fs.readdirSync(__dirname+"/compet/"+Season+"/"+filename).filter(clean)
     };
   });
   Fs.writeFileSync(__dirname+"/compets.js", "module.exports = "+JSON.stringify(compets, null, 2)+";", "utf8");

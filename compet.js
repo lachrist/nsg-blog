@@ -1,5 +1,6 @@
 
 var Compets = require("./compets.js");
+var Season = require("./season.js");
 
 var translate = (function (translations) {
   return function (word) { return translations[word] || word };
@@ -37,7 +38,7 @@ module.exports = function (date, div1) {
     Compets[date].docs.sort(sort).forEach(function (doc) {
       var a = document.createElement("a");
       a.textContent = translate(doc);
-      a.href = "compet/"+date+" "+Compets[date].name+"/"+doc;
+      a.href = "compet/"+Season+"/"+date+" "+Compets[date].name+"/"+doc;
       div2.appendChild(a);
     });
     div1.appendChild(div2);

@@ -1,0 +1,35 @@
+Aline:
+  01 50nl
+  05 200nl
+  20 2004n
+Anthonios:
+  02 50nl
+  12 50pap
+  18 100br
+Bilal:
+  02 50nl
+  18 100br
+Fiona:
+  05 200nl
+  11 50pap
+  20 2004n
+Habib:
+  02 50nl
+  08 100dos
+  18 100br
+LM:
+  02 50nl
+  12 50pap
+  18 100br
+Mohamed:
+  02 50nl
+  08 200nl
+  18 100br
+Nassif:
+  02 50nl
+  08 100dos
+  18 100br
+VDB:
+  02 50nl
+  08 200nl
+  12 50pap

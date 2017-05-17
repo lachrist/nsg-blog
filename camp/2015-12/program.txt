@@ -1,0 +1,30 @@
+14 bxl - renforcement
+  soir:
+15 bxl - renforcement
+  soir:
+16 bxl - renforcement
+  soir:
+17 bxl - renforcement
+  soir:
+18 depart - renforcement
+  soir: test 200m
+19
+  matin: test
+  soir:
+20
+  matin:
+  soir:
+21
+  matin:
+  soir:
+22
+  matin:
+  soir:
+23
+  matin:
+  soir:
+24 retour
+   matin: tests
+25 soir: vitesse - depart - virage
+26 compet
+27 compet

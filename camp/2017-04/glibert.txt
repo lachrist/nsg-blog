@@ -1,0 +1,53 @@
+
+Regina
+==============
+200m med <3.10
+200m dos <3.10
+ 50m brs <0.44
+100m pap <1.30
+
+Habib
+==============
+200m med <3.00
+200m dos =2.45
+ 50m dos <0.36
+100m lib <1.07
+
+
+Maksym
+==============
+200m med ~????
+200m dos =2.50
+200m lib <2.40
+100m lib <1.10
+
+
+
+Lisa
+==============
+200m med
+200m brs
+200m lib
+100m lib
+
+Victoria
+==============
+200m med
+200m brs
+200m lib
+100m dos
+
+Gerson
+==============
+
+200m dos
+200m lib
+100m lib
+100m dos
+
+Lina
+==============
+200m dos
+200m lib
+100m lib
+100m dos

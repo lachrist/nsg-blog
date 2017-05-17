@@ -171,7 +171,9 @@ module.exports = {
   },
   "2017-04-17": {
     "name": "Glibert Lewillie @Poseidon",
-    "docs": []
+    "docs": [
+      "avant-programe.pdf"
+    ]
   },
   "2017-04-22": {
     "name": "Ethias Trophy @Seraing",
@@ -191,9 +193,27 @@ module.exports = {
     "name": "Aernouts @Bastogne",
     "docs": []
   },
+  "2017-05-06": {
+    "name": "Grand Prix @Soignie",
+    "docs": [
+      "AVANT-PROGRAMME_gpvs17.pdf",
+      "confirm nsg.pdf"
+    ]
+  },
+  "2017-05-07": {
+    "name": "Grand Prix @Soignie",
+    "docs": []
+  },
   "2017-05-12": {
     "name": "Ch Bel OPEN @Wezenberg",
-    "docs": []
+    "docs": [
+      "01.BEL_SWI_OPEN_2017_Invitation.pdf",
+      "02.BEL_SWI_OPEN_2017_Programme_Limit-Times.pdf",
+      "03.BEL_SWI_OPEN_2017-LENEX.lxf",
+      "04.Form-Withdrawal-2017-NL-FRA.doc",
+      "05.BEL_SWI_OPEN_2017_Tarieven-Tarifs.pdf",
+      "06.Form-Registr-JURY-SWI-OPEN-2017.xls"
+    ]
   },
   "2017-05-13": {
     "name": "Ch Bel OPEN @Wezenberg",
@@ -209,9 +229,25 @@ module.exports = {
       "schedule.pdf"
     ]
   },
+  "2017-05-25": {
+    "name": "Speedo Meeting @Oostende",
+    "docs": [
+      "rosc_vp_24_25_26052017.pdf"
+    ]
+  },
+  "2017-05-26": {
+    "name": "Speedo Meeting @Oostende",
+    "docs": []
+  },
   "2017-06-03": {
     "name": "Fête LGN @Crisnée",
     "docs": []
+  },
+  "2017-06-05": {
+    "name": "Grand Prix @Mouscron",
+    "docs": [
+      "schedule.pdf"
+    ]
   },
   "2017-06-24": {
     "name": "Arena Sprints @Mons",
@@ -219,7 +255,10 @@ module.exports = {
   },
   "2017-07-21": {
     "name": "Ch Bel 2003-2006",
-    "docs": []
+    "docs": [
+      "SWIminima_BKCBCAT_WE1-2017.pdf",
+      "SWIprogrammeBKCBCATWE1-2017.pdf"
+    ]
   },
   "2017-07-22": {
     "name": "Ch Bel 2003-2006",
@@ -231,7 +270,10 @@ module.exports = {
   },
   "2017-07-28": {
     "name": "Ch Bel 2002+ @Wezenberg",
-    "docs": []
+    "docs": [
+      "SWIminima_BKCBCAT_WE2-2017.pdf",
+      "SWIprogrammeBKCBCATWE2-2017.pdf"
+    ]
   },
   "2017-07-29": {
     "name": "Ch Bel 2002+ @Wezenberg",

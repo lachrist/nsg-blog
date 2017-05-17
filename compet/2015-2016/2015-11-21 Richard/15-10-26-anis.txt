@@ -1,0 +1,173 @@
+
+Fiona
+  == samedi soir ==
+  02: 400 nl
+  (04: 200 4n) si pas possib 400 nl
+  08: 50nl
+  Relais
+  == dimanche matin ==
+  14: 100 nl
+  22: 50 pap
+  == dimanche aprem ==
+  28: 200 nl
+  36: 100 4n
+  Relais
+
+Mohamed
+  == samedi soir ==
+  01: 100 dos
+  05: 50 brasse
+  07: 50 pap
+  Relais
+  == dimanche matin ==
+  (15: 200 nl)
+  17: 50 dos
+  23: 100 pap
+  == dimanche aprem ==
+  29: 100 nl
+  (31: 200 dos)
+  35: 200 4n
+  37: 50 nl
+  Relais
+
+Bilal
+  == samedi soir ==
+  05: 50 brasse
+  09: 200 brasse
+  Relais
+  == dimanche matin ==
+  19: 100 brasse
+  25: 100 4n
+  == dimanche aprem ==
+  29: 100 nl
+  37: 50 nl
+  Relais
+
+MatthiasVDB
+  == samedi soir ==
+  07: 50 pap
+  11: 400 nl
+  Relais
+  == dimanche matin ==
+  15: 200 nl
+  23: 100 pap
+  == dimanche aprem ==
+  29: 100 nl
+  35: 200 4n
+  Relais
+
+MathiasLM
+  == samedi soir ==
+  (05: 50 brasse)
+  (07: 50 pap)
+  (09: 200 brasse)
+  Relais
+  == dimanche matin ==
+  (15: 200 nl)
+  (19: 100 brasse)
+  (23: 100 pap)
+  (25: 100 4n)
+  == dimanche aprem ==
+  (29: 100 nl)
+  (35: 200 4n)
+  (37: 50 nl)
+  Relais
+
+============
+== Samedi ==
+============
+
+01: 100 dos M
+  mohamed
+  nassif?
+02: 400 nl D
+  fiona
+03: 200 pap M
+04: 200 4n D
+  (fiona)
+05: 50 br M
+  mohamed
+  bilal
+
+== Pause ==
+
+06: 200 dos D
+07: 50 pap M
+  mohamed
+08: 50 nl D
+  (fiona)
+09: 200 br M
+10: 100 br D
+11: 400 nl
+  matthias
+
+== Pause 10 min ==
+
+12: 4x100 4n D [fiona, lea, aline, regina]
+  dos:
+  br:
+  pap:
+  nl:
+13: 4x100 4n M
+  dos: mohamed
+  br: bilal
+  pap: matthiasVDB
+  nl: mathiasLM
+
+==============
+== Dimanche ==
+==============
+
+14: 100 nl D
+  fiona
+15: 200 nl M
+  (mohamed)
+16: 50 br D
+17: 50 dos M
+  mohamed
+18: 200 pap D
+19: 100 br M
+
+== Pause ==
+
+[20: 100 4n canneton D]
+[21: 100 4n canneton M]
+22: 50 pap D
+23: 100 pap M
+  mohamed
+24: 100 dos D
+  (fiona)
+25: 100 4n M
+  mohamed
+
+== Pause Midi ==
+
+[26: 100 br canneton D]
+[27: 100 br canneton M]
+28: 100 nl D
+  fiona
+29: 100 nl M
+  mohamed
+30: 50 dos D
+31: 200 dos M
+  (mohamed)
+32: 100 pap D
+  fiona
+
+== Pause ==
+
+[33: 100 nl canneton D]
+[34: 100 nl canneton M]
+35: 200 4n M
+  mohamed
+36: 100 4n D
+  fiona
+37: 50 nl M
+  mohamed
+38: 200 br D
+
+== Pause 10 Min ==
+
+39: 4x100 nl D
+40: 4x100 nl M
+41: 4x50 nl MIXTE

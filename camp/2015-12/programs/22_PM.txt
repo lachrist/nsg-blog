@@ -1,0 +1,19 @@
+6000m
+
+10x300m fr
+  - 4 warmup
+  - 4 EN2
+    - Mohamed: arr: 4:30 dep 5:00
+    - Fiona & Nassif: arr: 5:00 dep 5:30
+  - 2 cooldown
+10x200m 4n
+  - 3 at increasing speed
+  - 5
+    - Mohamed: arr 3:30 dep 4:00
+    - Fiona & Nassif: arr 3:45 dep 4:15
+  - 2 easy
+10x100m
+  - 1 easy
+  - 8
+    - Mohamed: arr 2:00 dep 2:30
+    - Fiona & Nassif: arr 2:15 dep 2:45

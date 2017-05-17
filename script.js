@@ -1,6 +1,7 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 
 var Compets = require("./compets.js");
+var Season = require("./season.js");
 
 var translate = (function (translations) {
   return function (word) { return translations[word] || word };
@@ -38,14 +39,14 @@ module.exports = function (date, div1) {
     Compets[date].docs.sort(sort).forEach(function (doc) {
       var a = document.createElement("a");
       a.textContent = translate(doc);
-      a.href = "compet/"+date+" "+Compets[date].name+"/"+doc;
+      a.href = "compet/"+Season+"/"+date+" "+Compets[date].name+"/"+doc;
       div2.appendChild(a);
     });
     div1.appendChild(div2);
   }
 };
 
-},{"./compets.js":2}],2:[function(require,module,exports){
+},{"./compets.js":2,"./season.js":6}],2:[function(require,module,exports){
 module.exports = {
   "2016-10-08": {
     "name": "BCBW I @Blocry",
@@ -219,7 +220,9 @@ module.exports = {
   },
   "2017-04-17": {
     "name": "Glibert Lewillie @Poseidon",
-    "docs": []
+    "docs": [
+      "avant-programe.pdf"
+    ]
   },
   "2017-04-22": {
     "name": "Ethias Trophy @Seraing",
@@ -239,9 +242,27 @@ module.exports = {
     "name": "Aernouts @Bastogne",
     "docs": []
   },
+  "2017-05-06": {
+    "name": "Grand Prix @Soignie",
+    "docs": [
+      "AVANT-PROGRAMME_gpvs17.pdf",
+      "confirm nsg.pdf"
+    ]
+  },
+  "2017-05-07": {
+    "name": "Grand Prix @Soignie",
+    "docs": []
+  },
   "2017-05-12": {
     "name": "Ch Bel OPEN @Wezenberg",
-    "docs": []
+    "docs": [
+      "01.BEL_SWI_OPEN_2017_Invitation.pdf",
+      "02.BEL_SWI_OPEN_2017_Programme_Limit-Times.pdf",
+      "03.BEL_SWI_OPEN_2017-LENEX.lxf",
+      "04.Form-Withdrawal-2017-NL-FRA.doc",
+      "05.BEL_SWI_OPEN_2017_Tarieven-Tarifs.pdf",
+      "06.Form-Registr-JURY-SWI-OPEN-2017.xls"
+    ]
   },
   "2017-05-13": {
     "name": "Ch Bel OPEN @Wezenberg",
@@ -257,9 +278,25 @@ module.exports = {
       "schedule.pdf"
     ]
   },
+  "2017-05-25": {
+    "name": "Speedo Meeting @Oostende",
+    "docs": [
+      "rosc_vp_24_25_26052017.pdf"
+    ]
+  },
+  "2017-05-26": {
+    "name": "Speedo Meeting @Oostende",
+    "docs": []
+  },
   "2017-06-03": {
     "name": "Fête LGN @Crisnée",
     "docs": []
+  },
+  "2017-06-05": {
+    "name": "Grand Prix @Mouscron",
+    "docs": [
+      "schedule.pdf"
+    ]
   },
   "2017-06-24": {
     "name": "Arena Sprints @Mons",
@@ -267,7 +304,10 @@ module.exports = {
   },
   "2017-07-21": {
     "name": "Ch Bel 2003-2006",
-    "docs": []
+    "docs": [
+      "SWIminima_BKCBCAT_WE1-2017.pdf",
+      "SWIprogrammeBKCBCATWE1-2017.pdf"
+    ]
   },
   "2017-07-22": {
     "name": "Ch Bel 2003-2006",
@@ -279,7 +319,10 @@ module.exports = {
   },
   "2017-07-28": {
     "name": "Ch Bel 2002+ @Wezenberg",
-    "docs": []
+    "docs": [
+      "SWIminima_BKCBCAT_WE2-2017.pdf",
+      "SWIprogrammeBKCBCATWE2-2017.pdf"
+    ]
   },
   "2017-07-29": {
     "name": "Ch Bel 2002+ @Wezenberg",
@@ -294,8 +337,8 @@ module.exports = {
 module.exports = [
   "document/licence.pdf",
   "document/minima/2016-BCBW.pdf",
-  "document/minima/2016-BE-50m.pdf",
   "document/minima/2016-BE-25m.pdf",
+  "document/minima/2016-BE-50m.pdf",
   "document/minima/2017-FR-JEUNES-50m.pdf",
   "document/minima/2017-FR-OPEN-50m.pdf"
 ];
@@ -439,7 +482,19 @@ window.addEventListener("load", function () {
 
 });
 
-},{"./compet.js":1,"./documents.js":3,"./holliday.js":4,"./workout":7}],6:[function(require,module,exports){
+},{"./compet.js":1,"./documents.js":3,"./holliday.js":4,"./workout":8}],6:[function(require,module,exports){
+
+var augustus = 7; 
+var today = new Date();
+var year = today.getFullYear();
+var month = today.getMonth();
+
+if (month >= augustus)
+  module.exports = year+"-"+(year+1)
+else
+  module.exports = (year-1)+"-"+year
+
+},{}],7:[function(require,module,exports){
 
 var Templates = require("./templates.js");
 
@@ -464,7 +519,7 @@ module.exports = function (workout) {
   }));
 };
 
-},{"./templates.js":8}],7:[function(require,module,exports){
+},{"./templates.js":9}],8:[function(require,module,exports){
 
 var Workouts = require("./workouts.js");
 var Build = require("./build.js");
@@ -479,14 +534,14 @@ module.exports = function (date, div) {
   }
 };
 
-},{"./build.js":6,"./workouts.js":9}],8:[function(require,module,exports){
+},{"./build.js":7,"./workouts.js":10}],9:[function(require,module,exports){
 module.exports = {
   "butterfly1": "$1 * (120s elastic-butterfly + 30s rest)",
   "rotator1": "$1 * (30s elastic-rotator-external-left +\n      30s elastic-rotator-internal-left +\n      60s elbow-plank-left +\n      30s rest +\n      30s elastic-rotator-external-right +\n      30s elastic-rotator-internal-right +\n      60s elbow-plank-right +\n      30s rest)",
   "warmup1": "$1 * ($2 high-knee +\n      $2 butt-kicker +\n      $2 burpee-1 +\n      $2 burpee-2 +\n      $2 pushup-serratus +\n      $2 flutter-kick +\n      $2 rest)",
   "warmup2": "30s arm-circle-large-forward +\n30s arm-circle-large-backward +\n30s arm-circle-small-forward +\n30s arm-circle-small-backward +\n30s burpee-1 +\n30s burpee-2 +\n30s burpee"
 };
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 module.exports = {
   "2016-09-10": "  3 * (45s mountain-climbing + 15s rest)\n+ 60s rest\n+ 6 * (20s burpee + 10s rest)\n+ 60s rest\n+ 3 * (45s plank-front + 15s rest)\n+ 60s rest\n+ 3 * (30s plank-left + 30s plank-right)\n+ 60s rest\n+ 3 * (30s plank-front + 30s plank-back)\n+ 60s rest\n+ 3 * (20s plank-leg-left + 10s rest + 20s plank-leg-right + 10s rest)\n+ 60s rest\n+ 6 * (3 pushup-close in 15s + 3 pushup-large in 15s)\n+ 60s rest\n+ 3 * (45s elastic-butterfly + 15s rest)\n+ 60s rest\n+ 3 * (45s elastic-butterfly + 15s rest)",
   "2016-09-13": "  3 * (30s butt-kicker + 30s high-knee)\n+ 60s rest\n+ 3 * (  20s mountain-climbing + 10s rest\n       + 20s burpee            + 10s rest)\n+ 60s rest\n+ 3 * (   20s burpee-1 + 10s rest\n        + 20s burpee-2 + 10s rest)\n+ 60s rest\n+ 12 * (4 squat in 15s)\n+ 60s rest\n+ 3 * (40s plank-front + 20s rest)\n+ 60s rest\n+ 3 * (30s plank-left + 30s plank-right)\n+ 60s rest\n+ 6 * (3 pushup-close in 15s + 3 pushup-large in 15s)\n+ 60s rest\n+ 3 * (45s elastic-butterfly + 15s rest)\n+ 60s rest\n+ 3 * (45s elastic-butterfly + 15s rest)",

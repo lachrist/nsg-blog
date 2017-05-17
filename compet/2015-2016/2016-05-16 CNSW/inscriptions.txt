@@ -1,0 +1,71 @@
+Dames
+=====
+
+Corrazo Diaz       Regina    2004
+  07: 50  dos
+  17: 200 nl
+  21: 50  nl
+  33: 100 nl
+Pestieau           Fiona     2002
+  03: 200 4n
+  17: 200 nl
+  21: 50  nl
+  33: 100 nl
+Merckaert          Aline     2001
+  03: 200  4n
+  17: 200 nl
+  21: 50  nl
+  33: 100 nl
+Siriadis           Eymorfia  2005
+  07: 50  dos
+  17: 200 nl
+  21: 50  nl
+  33: 100 nl
+
+Messieurs
+=========
+
+Albatro            Mohamed   2001
+  04: 200 4n
+  14: 100 dos
+  18: 200 nl
+  34: 100 nl
+Rifi Agznay        Habib     2001
+  08: 50  dos
+  14: 100 dos
+  18: 200 nl
+  34: 100 nl
+Siriadis           Anthonios 2001
+  02: 200 brasse
+  14: 100 dos
+  20: 50 brasse
+  34: 100 nl
+Boushaba           Nassif    2002
+  06: 50  pap
+  14: 100 dos
+  20: 50  brasse
+  34: 100 nl
+Ouazil             Bilal     2000
+  08: 50  dos
+  20: 50  br
+  34: 100 nl
+Abdelouareth       Anouar    2004
+  02: 200 brasse
+  14: 100 dos
+  18: 200 nl
+  34: 100 nl
+Pestieau           Tiago     2005
+  02: 200 brasse
+  14: 100 dos
+  18: 200 nl
+  34: 100 nl
+Alluca             Daniel    2005
+  06: 50  pap
+  14: 100 dos
+  18: 200 nl
+  34: 100 nl
+Da Conceicao Sousa Luis      2005
+  02: 200 brasse
+  14: 100 dos
+  18: 200 nl
+  34: 100 nl

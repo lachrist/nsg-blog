@@ -1,0 +1,14 @@
+19
+
+Sleep:     10.0
+Breakfast: 02.5
+Lunch:     07.5
+Dinner:    07.5
+===============
+Total: 27.5
+
+Regina
+200dos    2:49.50
+50nl        32.10
+100brasse 1:28.19
+400 4nage 6:04.10

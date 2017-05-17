@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  <title>Olympic Pools in Belgium</title> 
+  <script src="http://maps.google.com/maps/api/js?sensor=false" 
+          type="text/javascript"></script>
+</head> 
+<body>
+  <a href="http://www.nageurs.com/piscines-belgique">Un petit annuaire des piscines</a>
+  <div id="map" style="width: 1000px; height: 600px;"></div>
+  <script type="text/javascript">
+    var map = new google.maps.Map(document.getElementById("map"), {
+      center: new google.maps.LatLng(50.47, 4.44),
+      zoom: 8
+    });
+    var infowindow = new google.maps.InfoWindow();
+    [
+      ["Brugge", "http://www.sr-olympia.be/", 51.191079, 3.183674],
+      ["Genk", "http://www.sportingenk.be/", 50.986218, 5.510543],
+      ["Gent", "http://www.sr-rozebroeken.be/", 51.061705, 3.761873],
+      ["Ostende", "http://www.oostende.be/zwembad", 51.226378, 2.904702],
+      ["Wachtebeek", "http://www.puyenbroeck.be/sporten-en-bewegen/zwembad", 51.151306, 3.897382],
+      ["Aalst", "http://aalst.be/default.asp?siteid=1&rubriekid=597&artikelid=932", 50.937881, 4.057414],
+      ["Antwerpen", "https://www.antwerpen.be/nl/info/olympisch-zwembad-wezenberg-in-antwerpen", 51.192848, 4.405925],
+      ["Zwevegem", "http://www.zwevegem.be/adressen/zwembad-sportpunt-2", 50.817266, 3.332977],
+      ["Molenbeek", "about:blank" ,50.854165, 4.310638],
+      ["Woluwe", "http://www.sportcity-woluwe.be/", 50.830368, 4.456032],
+      ["Spa", "http://www.piscinedespa.be/", 50.497346, 5.878211],
+      ["Charleroi", "http://xn--hlios-bsa.be/", 50.406968, 4.448051],
+      ["Arlon", "http://www.sport-adeps.be/index.php?id=cs_arlon", 49.683793, 5.794355],
+      ["Nivelles", "http://www.nivelles-maisondessports.be/", 50.588312, 4.322595],
+      ["Mouscron", "http://www.ieg.be/loisir_dauph_horaires.htm", 50.746247, 3.234095],
+      ["Seraing", "http://www.seraing.be/Piscine-Olympique,2330.html", 50.580643, 5.484564],
+      []
+    ].forEach(function (loc) {
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(loc[2], loc[3]),
+        map: map
+      });
+      google.maps.event.addListener(marker, "click", function () {
+        infowindow.setContent("<a href=\""+loc[1]+"\">"+loc[0]+"</a>");
+        infowindow.open(map, marker);
+      });
+    })
+  </script>
+</body>
+</html>
