@@ -1,0 +1,117 @@
+08               AEROBIC1   6000
+09               LONG-TEST  5000
+10 AEROBIC0 5000 AEROBIC1   5000
+11 EN1      6400 EN2        5600
+12 AEROBIC0 6000 AEROBIC2   6000
+13 AEROBIC0 6000 REST
+14 LONG-TEST 5000
+
+08 PM 6000m
+===========
+10 * 300m free    arr 4:45 dep 5:00 bruno arr 4:10 dep 4:30 
+10 * 200m meddley          dep 4:00 bruno arr 3:10 dep 3:30
+10 * 100m kick    arr 2:00 dep 2:30
+
+09 PM 5000m
+===========
+
+2 * 400m
+3 * 200m
+4 * 100m
+4 * 50m
+Test 30 min
+Recup + Prepa
+Test 400m
+Recup
+
+10 AM 5000m
+===========
+
+20 * 100m
+  5 dep 2:00 (1:45)
+  5 dep 1:55 (1:40)
+  5 dep 1:50 (1:35)
+  5 dep 1:45 (1:30)
+15 * 100m backstroke arr 1:45 dep 2:00
+10 * 100m kick
+05 * 100m souple technique
+
+10 PM 5000m
+===========
+
+800 warmup
+200 recup
+16 * 50 fr arr 40 dep 55
+           arr 35 dep 50
+200 recup
+16 * 50 fr pd arr 40 dep 55
+              arr 35 dep 50
+200 recup
+16 * 50 kick
+200 recup
+
+11 AM 6400m
+===========
+
+3 * 500m fr (fr+bk) (slow, middle, fast, allout)
+100m recup
+5 * 300m
+100m recup
+15 * 100m 1:55 1:50 1:45 1:40 1:35
+          1:40 1:35 1:30 1:25 1:20
+100m recup
+30 * 50m kick 1:00 (zoomer) 1:20
+100m recup
+
+11 PM 5600m
+===========
+
+4 * 200m warmup
+8 * 100m arr 1:30 dep 1:40
+         arr 1:15 dep 1:25
+4 * 200m (fr+bk)
+16 * 50m pd arr 40 dep 50
+            arr 35 dep 45
+4 * 200m md recup
+32 * 25m (bt+bk)
+4 * 200m kick (1 -> 4)
+
+12 AM 6000
+==========
+
+5 * 400m warmup
+10 * 200m arr 3:05 dep 3:20
+20 * 100m kk 
+
+12 PM 4800
+==========
+
+20 * 50m fr 1:10 1:05 1:00 0:55 0:50
+200 recup
+20 * 50m fr arr 0:43 dep 0:50
+200 recup
+20 * 50m bk arr 0:45 dep 1:00
+200 recup
+20 * 50m kk arr 1:00 dep 1:15
+200 recup
+
+13 AM 6000m
+===========
+
+4 * 200m warmup
+4 * 400m arr 6:10 dep 6:30
+3 * 200m recup
+3 * 400m arr 6:10 dep 6:30
+2 * 200m recup
+2 * 400m arr 6:10 dep 6:30
+1 * 200m recup
+1 * 400m arr 6:10 dep 6:30
+
+Swimmers tired, arerobic 
+recup session instead
+
+14 PM 
+=====
+
+TEST 400m
+TEST 30min

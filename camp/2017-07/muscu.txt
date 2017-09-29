@@ -1,0 +1,95 @@
+
+6 * (1:15 + 15s rest)
+
+10 AM
+=====
+
+10 * (45s skipping-rope + 15s rest) +
+10 * (45s elastic-trapeze + 15s rest +
+      45s elastic-trapeze + 15s rest +
+      1:45 elastic-butterfly + 15s rest)
+
+11 AM
+=====
+
+20 * (45s skipping-rope + 15s rest) + 
+5 *  (45s plank-elbow-front + 15s rest +
+      45s plank-elbow-left + 15s rest +
+      45s plank-elbow-right + 15s rest) +
+      45s superman + 15s rest) +
+3 *  (45s elastic-rotator-internal-left + 15s rest +
+      45s elastic-rotator-internal-right + 15s rest +
+      45s elastic-rotator-external-left + 15s rest +
+      45s elastic-rotator-external-right + 15s rest)
+
+11 PM
+=====
+
+10 * (45s skipping-rope + 15s rest) +
+10 * (45s elastic-trapeze + 15s rest +
+      105 elastic-butterfly + 15s rest) +
+6 * (45s rowing + 15s rest +
+     45s squat + 15s rest +
+     45s abs-wheel + 15s rest +
+     45s triceps + 15s rest +
+     45s wagon + 15s rest)
+
+
+12 AM
+=====
+
+10 * (75s skipping rope + 15s rest) +
+10 * (8 burpee in 30s +
+      30s buttkicker +
+      10 flexion in 30s +
+      30s high-knee) +
+20 * (30s elastic-rotator-internal-left +
+      30s elastic-rotator-internal-right +
+      30s elastic-rotator-external-left +
+      30s elastic-rotator-external-right +
+      180s elastic-butterfly)
+
+12 PM
+=====
+
+10 * (75s skipping rope + 15s rest) +
+10 * (5 burpee-pushups in 30s) +
+
+40s trapeze + 20s rest +
+40s pull-down + 20s rest + 
+40s rowing + 20s rest
+40s tricpes + 20s rest +
+40s pushups + 20s rest +
+40s pull-over + 20s rest +
+40s squats + 20s rest +
+40s wagon + 20s rest
+
+
+
+16 AM
+=====
+
+10min skipping-rope
+16min rotato + core workoout
+3 * 8 * 25m kick arr 20 (25) dep 40 (45)
+TEST 75m
+
+16 PM
+=====
+
+chariot
+pull-down-pronation
+pull-down-supplination
+pull-over
+triceps
+rowing
+
+
+
+
+gainage-ventral
+gainage-lateral
+battement
+ninja
+papillon
+superman

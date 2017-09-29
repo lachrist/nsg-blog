@@ -1,0 +1,68 @@
+14               SHORT-TEST
+15 POWER 5200    VO2
+15 AEROBIC1 5000 SHORT-TEST 4000
+16 AEROBIC2 5000 SPEED      4000
+17 POWER    
+18
+19
+20 SPEED         SHORT-TEST
+21 EASY
+
+14 PM SHORT TEST
+================
+
+15 AM 5200m POWER
+===============
+
+5 * 200m warmup
+20 * 50m carre arr 40 dep 55
+2 * 200m recup
+20 * 50m carre arr 40 dep 60
+2 * 200m recup
+20 * 25m bt dep 50
+200m recup
+20 * 25m kk dep 40
+200m recup
+
+15 PM 4000m Anaerobic2
+======================
+
+40 * 25m arr 20 (16) dep 30
+4 * 100m recup
+10 * 100m arr 1:20 (1:10) dep 1:45
+4 * 100m recup
+
+16 AM 4600
+==========
+
+10 * 100m
+6 * 200m arr 3:10 dep 3:30
+3 * 200m recup
+6 * 200m arr 3:00 dep 3:30
+3 * 200m recup
+
+16 PM 5000
+==========
+
+800m warmup
+1 * 20 * 50m arr 42 (35) dep 50
+    400m recup
+2 * 10 * 50m arr 40 (30) dep 50
+    200m recup
+    10 * 50m arr 40 (30) dep 50
+    200m recup
+4 * 50m pd+pb arr 45 (32) dep 50
+    100m recup
+    50m pd+pb arr 45 (32) dep 50
+    100m recup
+    50m pd+pb arr 45 (32) dep 50
+    100m recup
+    50m pd+pb arr 45 (32) dep 50
+    100m recup
+
+17 AM
+=====
+
+18 AM
+=====
+

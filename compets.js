@@ -1,286 +1,58 @@
 module.exports = {
-  "2016-10-08": {
-    "name": "BCBW I @Blocry",
+  "2017-10-08": {
+    "name": "BCBW I @Poseidon",
     "docs": [
-      "invitation.pdf",
-      "result.lxf",
-      "result.pdf",
-      "startlist.pdf"
+      "171008_bcbw1.lxf",
+      "RBP08102017.pdf"
     ]
   },
-  "2016-10-09": {
-    "name": "BCBW II @Blocry",
+  "2017-10-21": {
+    "name": "BCBW II @Waterloo",
     "docs": [
-      "invitation.pdf",
-      "result.lxf",
-      "result.pdf",
-      "startlist.pdf"
+      "BWST21102017.pdf"
     ]
   },
-  "2016-10-22": {
-    "name": "BCBW III @Blocry",
+  "2017-10-22": {
+    "name": "BCBW III @Rixensart",
     "docs": [
-      "invitation.pdf",
-      "result.lxf",
-      "result.pdf",
-      "startlist.pdf"
+      "SCR22102017pm.pdf",
+      "scr22102017am.pdf"
     ]
   },
-  "2016-10-23": {
-    "name": "BCBW IV @Blocry",
-    "docs": [
-      "invitation.pdf",
-      "result.lxf",
-      "result.pdf",
-      "startlist.pdf"
-    ]
+  "2017-11-04": {
+    "name": "Burny @Laeken",
+    "docs": []
   },
-  "2016-11-19": {
-    "name": "Richard Anis I @Blocry",
-    "docs": [
-      "invitation.pdf",
-      "result.lxf",
-      "result.pdf",
-      "startlist.pdf"
-    ]
+  "2017-11-05": {
+    "name": "Burny @Laeken",
+    "docs": []
   },
-  "2016-11-20": {
-    "name": "Richard Anis II @Blocry",
-    "docs": [
-      "invitation.pdf",
-      "startlist.pdf"
-    ]
+  "2017-11-11": {
+    "name": "Ch Bel 25m @Gent",
+    "docs": []
   },
-  "2016-11-25": {
+  "2017-11-12": {
+    "name": "Ch Bel 25m @Gent",
+    "docs": []
+  },
+  "2017-11-18": {
+    "name": "Richard Anis @Blocry",
+    "docs": []
+  },
+  "2017-11-19": {
+    "name": "Richard Anis @Blocry",
+    "docs": []
+  },
+  "2017-11-24": {
     "name": "BCBW Relais I @Poseidon",
-    "docs": [
-      "result.lxf",
-      "result.pdf"
-    ]
+    "docs": []
   },
-  "2016-12-02": {
+  "2017-12-01": {
     "name": "BCBW Relais II @Poseidon",
     "docs": []
   },
-  "2016-12-27": {
-    "name": "Laatste Kans @Leuven",
-    "docs": [
-      "invitation.pdf"
-    ]
-  },
-  "2017-01-08": {
-    "name": "Frank Pepermans @Wezenberg",
-    "docs": [
-      "invitation.pdf",
-      "result.lxf",
-      "result.pdf",
-      "startlist.pdf"
-    ]
-  },
-  "2017-01-21": {
-    "name": "Ch Fr 2003-2006 @Helios",
-    "docs": [
-      "invitation.lxf",
-      "invitation.pdf"
-    ]
-  },
-  "2017-01-22": {
-    "name": "Ch Fr 2003-2006 @Helios",
-    "docs": []
-  },
-  "2017-01-29": {
-    "name": "Eliminatoires Georges @Blocry",
-    "docs": [
-      "inscription.pdf",
-      "invitation.lxf",
-      "invitation.pdf",
-      "medal.pdf",
-      "result.lxf",
-      "result.pdf",
-      "schedule.pdf",
-      "startlist.pdf"
-    ]
-  },
-  "2017-02-18": {
-    "name": "Ch Fr 2002+ @Helios",
-    "docs": [
-      "NSG Open.pdf",
-      "invitation.lxf",
-      "program.pdf",
-      "schedule.pdf",
-      "timing.pdf"
-    ]
-  },
-  "2017-02-19": {
-    "name": "Ch Fr 2002+ @Helios",
-    "docs": [
-      "program.pdf"
-    ]
-  },
-  "2017-03-11": {
-    "name": "Meeting des Sprints @Blocry",
-    "docs": [
-      "Forfaits et disqualifications.xls",
-      "Meeting des Sprints 2017 - Startlist.pdf",
-      "Meeting des Sprints 2017 - horaire.pdf",
-      "Médailles_club Meeting des Sprints-Eliminatoires Dauven  2017.pdf",
-      "Médailles_épreuve Meeting des Sprints-Eliminatoires Dauven  2017.pdf",
-      "Résultats Meeting des Sprints-Eliminatoires Dauven  2017.lxf",
-      "Résultats Meeting des Sprints-Eliminatoires Dauven  2017.pdf",
-      "inscriptions.pdf",
-      "schedule.pdf"
-    ]
-  },
-  "2017-03-12": {
-    "name": "Meeting des Sprints @Blocry",
-    "docs": [
-      "schedule.pdf"
-    ]
-  },
-  "2017-03-17": {
-    "name": "Grand Prix @Seraing",
-    "docs": []
-  },
-  "2017-03-18": {
-    "name": "Fête CNSW @Sportcity",
-    "docs": [
-      "Classement total.pdf",
-      "Résultats 180317.lxf",
-      "Résultats 180317.pdf",
-      "confirmation NSG.pdf",
-      "schedule.pdf"
-    ]
-  },
-  "2017-03-25": {
-    "name": "Grand Prix @Mons",
-    "docs": [
-      "CCM_avant-programme_Grand_Prix_Ville_Mons_25032017.pdf",
-      "Classement_interclubs_points_FINA_2016_1er_GP_Ville_Mons_25032017.pdf",
-      "Invitation_Grand_Prix_Ville_Mons_Challenge_S&R_25032017.pdf",
-      "NSG-MONS.lxf",
-      "Performances_individuelles_points_FINA_2016_1er_GP_Ville_Mons_25032017.pdf",
-      "Résultats_complets_1er_GP_Ville_Mons_25032017.lxf",
-      "Résultats_complets_1er_GP_Ville_Mons_25032017.pdf",
-      "Statistiques_médailles_1er_GP_Ville_Mons_25032017.pdf",
-      "inscriptions.pdf"
-    ]
-  },
-  "2017-03-29": {
-    "name": "Finales Georges @Seraing",
-    "docs": []
-  },
-  "2017-04-17": {
-    "name": "Glibert Lewillie @Poseidon",
-    "docs": [
-      "avant-programe.pdf"
-    ]
-  },
-  "2017-04-22": {
-    "name": "Ethias Trophy @Seraing",
-    "docs": []
-  },
-  "2017-04-28": {
-    "name": "Aernouts @Bastogne",
-    "docs": [
-      "cnb2830042017.pdf"
-    ]
-  },
-  "2017-04-29": {
-    "name": "Aernouts @Bastogne",
-    "docs": []
-  },
-  "2017-04-30": {
-    "name": "Aernouts @Bastogne",
-    "docs": []
-  },
-  "2017-05-06": {
-    "name": "Grand Prix @Soignie",
-    "docs": [
-      "AVANT-PROGRAMME_gpvs17.pdf",
-      "confirm nsg.pdf"
-    ]
-  },
-  "2017-05-07": {
-    "name": "Grand Prix @Soignie",
-    "docs": []
-  },
-  "2017-05-12": {
-    "name": "Ch Bel OPEN @Wezenberg",
-    "docs": [
-      "01.BEL_SWI_OPEN_2017_Invitation.pdf",
-      "02.BEL_SWI_OPEN_2017_Programme_Limit-Times.pdf",
-      "03.BEL_SWI_OPEN_2017-LENEX.lxf",
-      "04.Form-Withdrawal-2017-NL-FRA.doc",
-      "05.BEL_SWI_OPEN_2017_Tarieven-Tarifs.pdf",
-      "06.Form-Registr-JURY-SWI-OPEN-2017.xls"
-    ]
-  },
-  "2017-05-13": {
-    "name": "Ch Bel OPEN @Wezenberg",
-    "docs": []
-  },
-  "2017-05-14": {
-    "name": "Ch Bel OPEN @Wezenberg",
-    "docs": []
-  },
-  "2017-05-21": {
-    "name": "Fête CNSW @Sportcity",
-    "docs": [
-      "schedule.pdf"
-    ]
-  },
-  "2017-05-25": {
-    "name": "Speedo Meeting @Oostende",
-    "docs": [
-      "rosc_vp_24_25_26052017.pdf"
-    ]
-  },
-  "2017-05-26": {
-    "name": "Speedo Meeting @Oostende",
-    "docs": []
-  },
-  "2017-06-03": {
-    "name": "Fête LGN @Crisnée",
-    "docs": []
-  },
-  "2017-06-05": {
-    "name": "Grand Prix @Mouscron",
-    "docs": [
-      "schedule.pdf"
-    ]
-  },
-  "2017-06-24": {
-    "name": "Arena Sprints @Mons",
-    "docs": []
-  },
-  "2017-07-21": {
-    "name": "Ch Bel 2003-2006",
-    "docs": [
-      "SWIminima_BKCBCAT_WE1-2017.pdf",
-      "SWIprogrammeBKCBCATWE1-2017.pdf"
-    ]
-  },
-  "2017-07-22": {
-    "name": "Ch Bel 2003-2006",
-    "docs": []
-  },
-  "2017-07-23": {
-    "name": "Ch Bel 2003-2006",
-    "docs": []
-  },
-  "2017-07-28": {
-    "name": "Ch Bel 2002+ @Wezenberg",
-    "docs": [
-      "SWIminima_BKCBCAT_WE2-2017.pdf",
-      "SWIprogrammeBKCBCATWE2-2017.pdf"
-    ]
-  },
-  "2017-07-29": {
-    "name": "Ch Bel 2002+ @Wezenberg",
-    "docs": []
-  },
-  "2017-07-30": {
-    "name": "Ch Bel 2002+ @Wezenberg",
+  "2017-12-29": {
+    "name": "Derniere Chance @Mons",
     "docs": []
   }
 };
