@@ -9,14 +9,16 @@ module.exports = {
   "2017-10-21": {
     "name": "BCBW II @Waterloo",
     "docs": [
-      "BWST21102017.pdf"
+      "Avant-programme Championnats BCBW II 21_10_2017_WN.pdf",
+      "Championnats BCBW 2017 II 21_10_2017.lxf"
     ]
   },
   "2017-10-22": {
     "name": "BCBW III @Rixensart",
     "docs": [
-      "SCR22102017pm.pdf",
-      "scr22102017am.pdf"
+      "Avant-programme Championnats BCBW III 22_10_2017_SCR.pdf",
+      "Avant-programme Championnats BCBW IV 22_10_2017_SCR.pdf",
+      "Championnats BCBW 2017 III et IV 22_10_2017.lxf"
     ]
   },
   "2017-11-04": {

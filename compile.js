@@ -37,5 +37,5 @@ RecursiveReaddir(__dirname+"/document", [".DS_Store"], function (err, files) {
   for (var i=0; i<files.length; i++)
     files[i] = files[i].substring(__dirname.length+1);
   Fs.writeFileSync(__dirname+"/documents.js", "module.exports = "+JSON.stringify(files, null, 2)+";", "utf8");
-  Browserify().add("./main.js").bundle().pipe(Fs.createWriteStream("./script.js"));
+  Browserify().add(__dirname+"/main.js").bundle().pipe(Fs.createWriteStream("./script.js"));
 });
